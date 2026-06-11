@@ -33,6 +33,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/widget.css">
 </head>
 <body>
 
@@ -171,5 +172,6 @@
   hb.addEventListener('click', () => { hb.classList.toggle('open'); mn.classList.toggle('open'); });
   mn.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { hb.classList.remove('open'); mn.classList.remove('open'); }));
 </script>
+<script src="/widget.js" defer></script>
 </body>
 </html>
