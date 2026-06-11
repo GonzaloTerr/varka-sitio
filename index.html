@@ -1,0 +1,1416 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consultora de IA en Argentina | Agentes y Automatizaciones — Varka</title>
+<meta name="description" content="Consultora de inteligencia artificial en Argentina. Implementamos agentes de IA, automatizaciones y chatbots para pymes. Diagnóstico gratuito de 1 hora.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://varka.tech/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://varka.tech/">
+<meta property="og:title" content="Varka — Consultora de IA en Argentina">
+<meta property="og:description" content="Agentes de IA, automatizaciones y chatbots para pymes en Argentina. Sin tecnicismos, sin proyectos eternos. Diagnóstico gratuito.">
+<meta property="og:image" content="https://varka.tech/og-image.jpg">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Varka — Consultora de IA en Argentina">
+<meta name="twitter:description" content="Agentes de IA, automatizaciones y chatbots para pymes. Diagnóstico gratuito.">
+<meta name="twitter:image" content="https://varka.tech/og-image.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Varka",
+  "url": "https://varka.tech",
+  "email": "consultas@varka.tech",
+  "description": "Consultoría de inteligencia artificial para pymes. Implementamos chatbots, automatizaciones y estrategias de IA para pequeñas y medianas empresas.",
+  "foundingDate": "2025",
+  "areaServed": [
+    {"@type": "Country", "name": "Argentina"},
+    {"@type": "Country", "name": "Uruguay"},
+    {"@type": "Country", "name": "Chile"}
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios de IA para pymes",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {"@type": "Service", "name": "Chatbots y asistentes virtuales", "description": "Asistentes inteligentes para WhatsApp, web o Instagram que atienden clientes 24/7."},
+        "priceSpecification": {"@type": "PriceSpecification", "price": "800", "priceCurrency": "USD"}
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {"@type": "Service", "name": "Automatización de procesos", "description": "Eliminamos tareas manuales y repetitivas: reportes, seguimientos, carga de datos."},
+        "priceSpecification": {"@type": "PriceSpecification", "price": "500", "priceCurrency": "USD"}
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {"@type": "Service", "name": "Asesoría estratégica en IA", "description": "Análisis de tu negocio e identificación de oportunidades de IA con mayor impacto."},
+        "priceSpecification": {"@type": "PriceSpecification", "price": "120", "priceCurrency": "USD"}
+      }
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Necesito tener conocimientos técnicos para trabajar con Varka?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. Nos encargamos de todo el desarrollo e implementación. Vos solo nos contás tu negocio y nosotros te decimos qué tiene sentido hacer y cómo va a funcionar."}
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué herramientas de IA usan?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Usamos las mejores herramientas según el caso: OpenAI, Make, Zapier, n8n, Botpress, Manychat y más. Siempre elegimos la que mejor se adapta a tu presupuesto y necesidades."}
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto tiempo lleva implementar una solución?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Entre 2 y 4 semanas desde que confirmás el proyecto. Una automatización de procesos puede estar lista en 1 a 2 semanas, dependiendo de la complejidad."}
+    },
+    {
+      "@type": "Question",
+      "name": "¿El diagnóstico realmente es gratuito y sin compromiso?",
+      "acceptedAnswer": {"@type": "Answer", "text": "100% gratuito, sin compromiso. Si al terminar la sesión decidís que no es el momento, no hay ningún problema. De todas formas te llevás insights valiosos sobre tu negocio."}
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --verde-noche: #0F2A1E;
+    --verde-marca: #1D9E75;
+    --verde-claro: #5DCAA5;
+    --menta: #E1F5EE;
+    --arena: #F5F0E8;
+    --texto-oscuro: #0A1F16;
+    --texto-medio: #3D6B57;
+    --blanco: #FAFAF8;
+    --ease: 0.25s ease;
+  }
+
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--blanco); color: var(--texto-oscuro); overflow-x: hidden; }
+
+  /* SCROLL ANIMATIONS */
+  .fade-up {
+    opacity: 0; transform: translateY(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+  .problem-grid  .fade-up:nth-child(2), .services-grid .fade-up:nth-child(2),
+  .testi-grid    .fade-up:nth-child(2), .retainer-grid .fade-up:nth-child(2) { transition-delay: .1s; }
+  .problem-grid  .fade-up:nth-child(3), .services-grid .fade-up:nth-child(3),
+  .testi-grid    .fade-up:nth-child(3), .retainer-grid .fade-up:nth-child(3) { transition-delay: .2s; }
+  .problem-grid  .fade-up:nth-child(4) { transition-delay: .3s; }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.25rem 3rem;
+    background: rgba(15,42,30,0.97); backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(225,245,238,0.06);
+    transition: padding .3s ease;
+  }
+  nav.scrolled { padding-top: .875rem; padding-bottom: .875rem; }
+  .nav-logo {
+    display: flex; align-items: center; gap: 10px;
+    font-family: 'DM Serif Display', serif; font-size: 1.5rem;
+    color: var(--menta); text-decoration: none; letter-spacing: -.02em;
+  }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a { font-size: .875rem; color: rgba(225,245,238,.65); text-decoration: none; transition: color var(--ease); }
+  .nav-links a:hover { color: var(--verde-claro); }
+  .nav-cta {
+    font-size: .875rem; font-weight: 500;
+    background: var(--verde-marca); color: var(--menta);
+    border: none; padding: .6rem 1.4rem; border-radius: 6px;
+    cursor: pointer; text-decoration: none; transition: background var(--ease);
+  }
+  .nav-cta:hover { background: #16835f; }
+
+  /* HAMBURGER */
+  .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+  .hamburger span { display: block; width: 22px; height: 2px; background: var(--menta); border-radius: 2px; transition: transform .3s ease, opacity .3s ease; }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* MOBILE DRAWER */
+  .mobile-nav {
+    display: none; position: fixed; top: 65px; left: 0; right: 0;
+    background: rgba(15,42,30,0.98); backdrop-filter: blur(10px);
+    padding: 1.5rem; z-index: 99;
+    border-bottom: 1px solid rgba(225,245,238,0.08);
+    transform: translateY(-8px); opacity: 0;
+    transition: transform .3s ease, opacity .3s ease;
+    pointer-events: none;
+  }
+  .mobile-nav.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+  .mobile-nav ul { list-style: none; display: flex; flex-direction: column; }
+  .mobile-nav a { display: block; padding: .875rem 0; font-size: 1rem; color: rgba(225,245,238,.8); text-decoration: none; border-bottom: 1px solid rgba(225,245,238,.06); }
+  .mobile-nav .mobile-cta { display: block; margin-top: 1.25rem; background: var(--verde-marca); color: var(--menta); text-align: center; padding: .875rem; border-radius: 8px; font-weight: 500; text-decoration: none; }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh; background: var(--verde-noche);
+    display: flex; align-items: center;
+    padding: 8rem 3rem 5rem; position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; top: -20%; right: -5%;
+    width: 700px; height: 700px;
+    background: radial-gradient(circle, rgba(29,158,117,.11) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero::after {
+    content: ''; position: absolute; bottom: -10%; left: 15%;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(93,202,165,.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-inner {
+    max-width: 1200px; margin: 0 auto; width: 100%;
+    display: grid; grid-template-columns: 1fr 360px;
+    gap: 5rem; align-items: center; position: relative; z-index: 1;
+  }
+  .hero-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: .75rem; font-weight: 500; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--verde-claro);
+    border: 1px solid rgba(93,202,165,.3); padding: .4rem .9rem; border-radius: 100px;
+    margin-bottom: 2rem; animation: fadeUp .6s ease both;
+  }
+  .hero-tag span { width: 6px; height: 6px; border-radius: 50%; background: var(--verde-claro); animation: pulse 2s infinite; }
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2.8rem, 5.5vw, 4.75rem);
+    line-height: 1.06; color: var(--blanco); letter-spacing: -.03em;
+    max-width: 680px; margin-bottom: 1.75rem;
+    animation: fadeUp .6s .1s ease both;
+  }
+  .hero h1 em { font-style: italic; color: var(--verde-claro); }
+  .hero p {
+    font-size: 1.125rem; font-weight: 300; line-height: 1.8;
+    color: rgba(225,245,238,.68); max-width: 500px; margin-bottom: 2.5rem;
+    animation: fadeUp .6s .2s ease both;
+  }
+  .hero-actions { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; animation: fadeUp .6s .3s ease both; }
+
+  .btn-primary {
+    background: var(--verde-marca); color: var(--menta);
+    border: none; padding: .875rem 2rem; border-radius: 8px;
+    font-size: .9375rem; font-weight: 500; cursor: pointer;
+    text-decoration: none; transition: all var(--ease);
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-primary:hover { background: #16835f; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(29,158,117,.35); }
+  .btn-secondary {
+    background: transparent; color: rgba(225,245,238,.8);
+    border: 1px solid rgba(225,245,238,.2); padding: .875rem 2rem; border-radius: 8px;
+    font-size: .9375rem; cursor: pointer; text-decoration: none; transition: all var(--ease);
+  }
+  .btn-secondary:hover { border-color: rgba(93,202,165,.5); color: var(--verde-claro); }
+
+  .hero-stats { display: flex; gap: 3rem; margin-top: 4rem; padding-top: 3rem; border-top: 1px solid rgba(225,245,238,.1); animation: fadeUp .6s .4s ease both; }
+  .stat-num { font-family: 'DM Serif Display', serif; font-size: 2.25rem; color: var(--verde-claro); letter-spacing: -.03em; }
+  .stat-label { font-size: .8125rem; color: rgba(225,245,238,.5); margin-top: 2px; }
+
+  /* SERVICES SHOWCASE (hero) */
+  .services-showcase { display: flex; flex-direction: column; gap: .875rem; animation: fadeUp .8s .4s ease both; }
+  .showcase-card {
+    position: relative; background: rgba(255,255,255,.04);
+    border: 1px solid rgba(93,202,165,.12); border-radius: 14px;
+    padding: 1.25rem 1.5rem; display: flex; gap: 1rem; align-items: flex-start;
+    transition: background var(--ease), border-color var(--ease);
+  }
+  .showcase-card:hover { background: rgba(255,255,255,.07); border-color: rgba(29,158,117,.4); }
+  .showcase-card.sc-featured { border-color: rgba(29,158,117,.45); background: rgba(29,158,117,.07); }
+  .sc-icon {
+    width: 42px; height: 42px; background: rgba(29,158,117,.15); border-radius: 10px;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .showcase-card.sc-featured .sc-icon { background: rgba(29,158,117,.25); }
+  .sc-content { flex: 1; }
+  .sc-content h4 { font-size: .9375rem; font-weight: 500; color: var(--menta); margin-bottom: .3rem; }
+  .sc-content p { font-size: .8125rem; color: rgba(225,245,238,.5); line-height: 1.55; }
+  .sc-badge {
+    font-size: .6875rem; font-weight: 500; color: var(--verde-claro);
+    background: rgba(93,202,165,.1); border: 1px solid rgba(93,202,165,.2);
+    padding: .2rem .55rem; border-radius: 20px; white-space: nowrap;
+    margin-top: .15rem; flex-shrink: 0;
+  }
+
+  /* TRUST BAR */
+  .trust { background: var(--blanco); padding: 1.75rem 3rem; border-bottom: 1px solid rgba(15,42,30,.06); }
+  .trust-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+  .trust-label { font-size: .8125rem; color: var(--texto-medio); white-space: nowrap; }
+  .trust-items { display: flex; gap: 2.5rem; flex-wrap: wrap; align-items: center; }
+  .trust-item { font-size: .8125rem; font-weight: 500; color: rgba(10,31,22,.35); letter-spacing: .06em; text-transform: uppercase; }
+
+  /* SHARED SECTION */
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-tag { font-size: .75rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--verde-marca); margin-bottom: 1rem; }
+
+  /* PROBLEM */
+  .problem { background: var(--arena); padding: 6rem 3rem; }
+  .problem h2 { font-family: 'DM Serif Display', serif; font-size: clamp(2rem,4vw,3rem); line-height: 1.15; letter-spacing: -.02em; color: var(--texto-oscuro); max-width: 640px; margin-bottom: 1.5rem; }
+  .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 3rem; }
+  .problem-card { background: var(--blanco); border-radius: 12px; padding: 1.75rem; border: 1px solid rgba(15,42,30,.08); transition: transform var(--ease), box-shadow var(--ease); }
+  .problem-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(15,42,30,.08); }
+  .problem-icon { width: 42px; height: 42px; border-radius: 10px; background: var(--menta); display: flex; align-items: center; justify-content: center; margin-bottom: 1.1rem; }
+  .problem-card h3 { font-size: 1rem; font-weight: 500; color: var(--texto-oscuro); margin-bottom: .5rem; }
+  .problem-card p { font-size: .875rem; color: var(--texto-medio); line-height: 1.7; }
+
+  /* SERVICES */
+  .services { background: var(--blanco); padding: 6rem 3rem; }
+  .services-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem; gap: 2rem; flex-wrap: wrap; }
+  .services h2 { font-family: 'DM Serif Display', serif; font-size: clamp(2rem,4vw,3rem); line-height: 1.15; letter-spacing: -.02em; color: var(--texto-oscuro); }
+  .services-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; }
+  .service-card { border-radius: 14px; padding: 2rem; border: 1px solid rgba(15,42,30,.1); position: relative; overflow: hidden; transition: transform var(--ease), border-color var(--ease), box-shadow var(--ease); }
+  .service-card:hover { transform: translateY(-4px); border-color: var(--verde-claro); box-shadow: 0 16px 40px rgba(15,42,30,.08); }
+  .service-card.featured { background: var(--verde-noche); border-color: var(--verde-marca); }
+  .service-card.featured:hover { box-shadow: 0 16px 40px rgba(29,158,117,.2); }
+  .service-num { font-family: 'DM Serif Display', serif; font-size: 3rem; color: rgba(15,42,30,.06); position: absolute; top: 1rem; right: 1.5rem; line-height: 1; pointer-events: none; }
+  .service-card.featured .service-num { color: rgba(93,202,165,.08); }
+  .service-badge { display: inline-block; font-size: .7rem; font-weight: 500; text-transform: uppercase; letter-spacing: .08em; background: var(--menta); color: var(--verde-marca); padding: 3px 10px; border-radius: 100px; margin-bottom: 1.25rem; }
+  .service-card.featured .service-badge { background: rgba(29,158,117,.25); color: var(--verde-claro); }
+  .service-card h3 { font-family: 'DM Serif Display', serif; font-size: 1.375rem; color: var(--texto-oscuro); margin-bottom: .75rem; letter-spacing: -.01em; }
+  .service-card.featured h3 { color: var(--menta); }
+  .service-card p { font-size: .875rem; color: var(--texto-medio); line-height: 1.7; margin-bottom: 1.5rem; }
+  .service-card.featured p { color: rgba(225,245,238,.6); }
+  .service-price { font-size: 1.25rem; font-weight: 500; color: var(--texto-oscuro); }
+  .service-card.featured .service-price { color: var(--verde-claro); }
+  .service-price span { font-size: .8125rem; font-weight: 400; color: var(--texto-medio); }
+  .service-card.featured .service-price span { color: rgba(225,245,238,.45); }
+
+  /* TESTIMONIALS */
+  .testimonials { background: var(--verde-noche); padding: 6rem 3rem; }
+  .testimonials .section-tag { color: var(--verde-claro); opacity: .7; }
+  .testimonials h2 { font-family: 'DM Serif Display', serif; font-size: clamp(2rem,4vw,3rem); line-height: 1.15; letter-spacing: -.02em; color: var(--menta); margin-bottom: 3rem; }
+  .testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; }
+  .testi-card { background: rgba(255,255,255,.04); border-radius: 14px; padding: 2rem; border: 1px solid rgba(93,202,165,.12); display: flex; flex-direction: column; transition: transform var(--ease); }
+  .testi-card:hover { transform: translateY(-3px); }
+  .stars { color: var(--verde-claro); font-size: .875rem; letter-spacing: 2px; margin-bottom: 1rem; }
+  .testi-text { font-size: .9375rem; line-height: 1.75; color: rgba(225,245,238,.82); flex: 1; margin-bottom: 1.5rem; }
+  .testi-author { display: flex; align-items: center; gap: 12px; }
+  .testi-avatar { width: 40px; height: 40px; border-radius: 50%; flex-shrink: 0; background: rgba(29,158,117,.25); display: flex; align-items: center; justify-content: center; font-family: 'DM Serif Display', serif; font-size: .875rem; color: var(--verde-claro); }
+  .testi-name { font-size: .875rem; font-weight: 500; color: var(--menta); }
+  .testi-role { font-size: .8125rem; color: rgba(225,245,238,.45); margin-top: 1px; }
+
+  /* HOW */
+  .how { background: var(--arena); padding: 6rem 3rem; }
+  .how h2 { font-family: 'DM Serif Display', serif; font-size: clamp(2rem,4vw,3rem); color: var(--texto-oscuro); letter-spacing: -.02em; line-height: 1.15; margin-bottom: 3rem; max-width: 560px; }
+  .how-steps { display: flex; flex-direction: column; }
+  .how-step { display: grid; grid-template-columns: 60px 1fr; gap: 0 2rem; padding: 2rem 0; border-bottom: 1px solid rgba(15,42,30,.08); }
+  .how-step:last-child { border-bottom: none; }
+  .step-num { font-family: 'DM Serif Display', serif; font-size: 1rem; color: var(--verde-marca); opacity: .5; padding-top: 2px; }
+  .step-content h3 { font-size: 1.0625rem; font-weight: 500; color: var(--texto-oscuro); margin-bottom: .4rem; }
+  .step-content p { font-size: .875rem; color: var(--texto-medio); line-height: 1.7; }
+  .step-tag { display: inline-block; font-size: .7rem; font-weight: 500; text-transform: uppercase; letter-spacing: .08em; color: var(--verde-marca); margin-bottom: .5rem; }
+
+  /* RETAINER */
+  .retainer { background: var(--blanco); padding: 6rem 3rem; }
+  .retainer h2 { font-family: 'DM Serif Display', serif; font-size: clamp(2rem,4vw,3rem); letter-spacing: -.02em; line-height: 1.15; margin-bottom: .75rem; }
+  .retainer > .section-inner > p { font-size: 1rem; color: var(--texto-medio); margin-bottom: 3rem; max-width: 500px; }
+  .retainer-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; }
+  .retainer-card { background: var(--arena); border-radius: 14px; padding: 1.75rem; border: 1px solid rgba(15,42,30,.1); transition: transform var(--ease); }
+  .retainer-card:hover { transform: translateY(-3px); }
+  .retainer-card.featured { background: var(--verde-noche); border-color: var(--verde-marca); }
+  .retainer-card h3 { font-size: 1rem; font-weight: 500; color: var(--texto-oscuro); margin-bottom: .4rem; }
+  .retainer-card.featured h3 { color: var(--menta); }
+  .retainer-card .price { font-family: 'DM Serif Display', serif; font-size: 2rem; color: var(--texto-oscuro); letter-spacing: -.02em; margin-bottom: .25rem; }
+  .retainer-card.featured .price { color: var(--verde-claro); }
+  .retainer-card .price-sub { font-size: .8125rem; color: var(--texto-medio); margin-bottom: 1.25rem; }
+  .retainer-card.featured .price-sub { color: rgba(225,245,238,.45); }
+  .retainer-features { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .retainer-features li { font-size: .875rem; color: var(--texto-medio); display: flex; gap: 8px; align-items: flex-start; }
+  .retainer-card.featured .retainer-features li { color: rgba(225,245,238,.65); }
+  .retainer-features li::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--verde-marca); flex-shrink: 0; margin-top: 7px; }
+  .retainer-card.featured .retainer-features li::before { background: var(--verde-claro); }
+  .card-cta { display: block; margin-top: 1.5rem; text-align: center; padding: .625rem; border-radius: 8px; font-size: .875rem; font-weight: 500; text-decoration: none; border: 1px solid rgba(15,42,30,.15); color: var(--texto-oscuro); transition: all var(--ease); }
+  .card-cta:hover { background: var(--verde-marca); color: var(--menta); border-color: var(--verde-marca); }
+  .retainer-card.featured .card-cta { background: var(--verde-marca); color: var(--menta); border-color: var(--verde-marca); }
+  .retainer-card.featured .card-cta:hover { background: #16835f; }
+
+  /* FAQ */
+  .faq { background: var(--arena); padding: 6rem 3rem; }
+  .faq h2 { font-family: 'DM Serif Display', serif; font-size: clamp(2rem,4vw,3rem); letter-spacing: -.02em; line-height: 1.15; max-width: 640px; margin-bottom: 3rem; }
+  .faq-list { display: flex; flex-direction: column; max-width: 780px; }
+  .faq-item { border-bottom: 1px solid rgba(15,42,30,.1); }
+  .faq-q {
+    width: 100%; text-align: left; padding: 1.5rem 0;
+    background: none; border: none; cursor: pointer;
+    font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 500;
+    color: var(--texto-oscuro); display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  }
+  .faq-q:hover { color: var(--verde-marca); }
+  .faq-icon { width: 26px; height: 26px; border-radius: 50%; background: var(--menta); flex-shrink: 0; display: flex; align-items: center; justify-content: center; transition: transform .3s ease, background .2s; }
+  .faq-item.open .faq-icon { transform: rotate(45deg); background: var(--verde-marca); }
+  .faq-item.open .faq-icon path { stroke: white; }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height .4s ease; }
+  .faq-item.open .faq-a { max-height: 200px; }
+  .faq-a p { font-size: .9375rem; color: var(--texto-medio); line-height: 1.75; padding-bottom: 1.5rem; }
+
+  /* CTA */
+  .cta { background: var(--verde-marca); padding: 5rem 3rem; text-align: center; }
+  .cta h2 { font-family: 'DM Serif Display', serif; font-size: clamp(2rem,4vw,3.25rem); color: var(--verde-noche); letter-spacing: -.02em; line-height: 1.15; max-width: 640px; margin: 0 auto 1.25rem; }
+  .cta p { font-size: 1rem; color: rgba(15,42,30,.7); max-width: 480px; margin: 0 auto 2.5rem; line-height: 1.7; }
+  .cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .btn-dark { background: var(--verde-noche); color: var(--menta); border: none; padding: 1rem 2.5rem; border-radius: 8px; font-size: 1rem; font-weight: 500; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all var(--ease); }
+  .btn-dark:hover { background: #071710; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.2); }
+  .btn-outline { background: transparent; color: var(--verde-noche); border: 2px solid var(--verde-noche); padding: 1rem 2.5rem; border-radius: 8px; font-size: 1rem; font-weight: 500; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all var(--ease); }
+  .btn-outline:hover { background: rgba(15,42,30,.1); }
+
+  /* FOOTER */
+  footer { background: var(--verde-noche); padding: 4rem 3rem 2rem; border-top: 1px solid rgba(225,245,238,.06); }
+  .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+  .footer-logo { font-family: 'DM Serif Display', serif; font-size: 1.375rem; color: var(--menta); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 1rem; }
+  .footer-tagline { font-size: .875rem; color: rgba(225,245,238,.4); line-height: 1.7; max-width: 240px; margin-bottom: 1.25rem; }
+  .footer-email { font-size: .9375rem; font-weight: 500; color: var(--verde-claro); text-decoration: none; display: inline-flex; align-items: center; gap: 7px; }
+  .footer-email:hover { text-decoration: underline; }
+
+  /* EMAIL PROMINENTE EN CTA */
+  .cta-email-row { display: flex; align-items: center; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 1.75rem; }
+  .cta-email-row span { font-size: .9375rem; color: rgba(15,42,30,.65); }
+  .cta-email-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 1.0625rem; font-weight: 600; color: var(--verde-noche);
+    background: rgba(15,42,30,.07); border: 1.5px solid rgba(15,42,30,.18);
+    padding: .6rem 1.5rem; border-radius: 10px; text-decoration: none;
+    letter-spacing: -.01em; transition: all .2s;
+  }
+  .cta-email-link:hover { background: rgba(15,42,30,.13); border-color: rgba(15,42,30,.3); transform: translateY(-1px); }
+  .footer-col h4 { font-size: .8125rem; font-weight: 500; color: rgba(225,245,238,.45); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 1.25rem; }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: .75rem; }
+  .footer-col a { font-size: .875rem; color: rgba(225,245,238,.55); text-decoration: none; transition: color var(--ease); }
+  .footer-col a:hover { color: var(--verde-claro); }
+  .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid rgba(225,245,238,.06); flex-wrap: wrap; gap: 1rem; }
+  .footer-bottom p { font-size: .8125rem; color: rgba(225,245,238,.3); }
+  .footer-links { display: flex; gap: 1.5rem; }
+  .footer-links a { font-size: .8125rem; color: rgba(225,245,238,.4); text-decoration: none; }
+  .footer-links a:hover { color: var(--verde-claro); }
+
+  /* BACK TO TOP */
+  .back-top { position: fixed; bottom: 1.5rem; right: 5.5rem; width: 40px; height: 40px; border-radius: 10px; background: var(--verde-marca); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; opacity: 0; transform: translateY(10px); transition: opacity .3s, transform .3s, background .2s; z-index: 50; }
+  .back-top.visible { opacity: 1; transform: translateY(0); }
+  .back-top:hover { background: #16835f; }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .4; } }
+  @keyframes bounce { 0%,60%,100% { transform: translateY(0); } 30% { transform: translateY(-5px); } }
+
+  /* RESPONSIVE */
+  @media (max-width: 1024px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .services-showcase { display: none; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links, .nav-cta { display: none; }
+    .hamburger { display: flex; }
+    .mobile-nav { display: block; }
+    .hero, .problem, .services, .testimonials, .how, .retainer, .faq, .cta, .trust { padding-left: 1.5rem; padding-right: 1.5rem; }
+    .problem-grid, .services-grid, .testi-grid, .retainer-grid { grid-template-columns: 1fr; }
+    .hero-stats { gap: 1.75rem; flex-wrap: wrap; }
+    .trust-inner { flex-direction: column; gap: 1.25rem; text-align: center; }
+    footer { padding: 2.5rem 1.5rem 1.5rem; }
+    .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+    .footer-bottom { flex-direction: column; align-items: flex-start; }
+    .cta-btns { flex-direction: column; align-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="nav-logo" href="#">
+    <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <polygon points="14,2 24.5,8 24.5,20 14,26 3.5,20 3.5,8" stroke="#5DCAA5" stroke-width="1.75" fill="rgba(29,158,117,.08)" stroke-linejoin="round"/>
+      <circle cx="14" cy="14" r="3" fill="#1D9E75"/>
+      <line x1="14" y1="2" x2="14" y2="11" stroke="#5DCAA5" stroke-width="1" opacity=".4"/>
+      <line x1="14" y1="17" x2="14" y2="26" stroke="#5DCAA5" stroke-width="1" opacity=".4"/>
+      <line x1="3.5" y1="8" x2="11" y2="12" stroke="#5DCAA5" stroke-width="1" opacity=".4"/>
+      <line x1="17" y1="16" x2="24.5" y2="20" stroke="#5DCAA5" stroke-width="1" opacity=".4"/>
+    </svg>
+    Varka
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#proceso">Proceso</a></li>
+    <li><a href="#planes">Planes</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a class="nav-cta" href="https://cal.com/consultora-varka/diagnostico-gratuito" target="_blank" rel="noopener">Diagnóstico gratis</a>
+  <button class="hamburger" aria-label="Abrir menú" aria-expanded="false" id="hamburger">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+  <ul>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#proceso">Proceso</a></li>
+    <li><a href="#planes">Planes</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a class="mobile-cta" href="https://cal.com/consultora-varka/diagnostico-gratuito" target="_blank" rel="noopener">Diagnóstico gratuito</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-tag"><span></span>Consultoría de IA para pymes</div>
+      <h1>Consultora de IA que <em>activa</em><br>tu negocio por dentro</h1>
+      <p>Implementamos chatbots, agentes de IA y automatizaciones para pymes y emprendedores — sin tecnicismos, sin proyectos eternos.</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="https://cal.com/consultora-varka/diagnostico-gratuito" target="_blank" rel="noopener">
+          Diagnóstico gratuito
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn-secondary" href="#servicios">Ver servicios</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">1 h</div>
+          <div class="stat-label">Diagnóstico gratuito para arrancar</div>
+        </div>
+        <div>
+          <div class="stat-num">2–4 sem</div>
+          <div class="stat-label">Tiempo promedio de entrega</div>
+        </div>
+        <div>
+          <div class="stat-num">50%</div>
+          <div class="stat-label">Adelanto para iniciar, resto al entregar</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Servicios showcase -->
+    <div class="services-showcase">
+      <div class="showcase-card sc-featured">
+        <div class="sc-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 6a2 2 0 012-2h10a2 2 0 012 2v5a2 2 0 01-2 2H9l-3 2v-2H5a2 2 0 01-2-2V6z" stroke="#5DCAA5" stroke-width="1.5" stroke-linejoin="round"/><path d="M7 9h2M11 9h2" stroke="#5DCAA5" stroke-width="1.75" stroke-linecap="round"/></svg>
+        </div>
+        <div class="sc-content">
+          <h4>Chatbots y Agentes de IA</h4>
+          <p>Asistentes que atienden clientes, califican leads y ejecutan tareas complejas — 24/7 sin intervención humana</p>
+        </div>
+        <div class="sc-badge">Más solicitado</div>
+      </div>
+      <div class="showcase-card">
+        <div class="sc-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="4" cy="10" r="2.5" stroke="#5DCAA5" stroke-width="1.5"/><circle cx="16" cy="4" r="2.5" stroke="#5DCAA5" stroke-width="1.5"/><circle cx="16" cy="16" r="2.5" stroke="#5DCAA5" stroke-width="1.5"/><path d="M6.5 9L13.5 5.5M6.5 11L13.5 14.5" stroke="#5DCAA5" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="sc-content">
+          <h4>Automatización de procesos</h4>
+          <p>Eliminamos tareas manuales: reportes, seguimientos, facturación, carga de datos — tu equipo libre para lo que importa</p>
+        </div>
+        <div class="sc-badge">Mayor ROI</div>
+      </div>
+      <div class="showcase-card">
+        <div class="sc-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3a5 5 0 015 5c0 2.2-1.2 4-3 4.8V14H8v-1.2C6.2 12 5 10.2 5 8a5 5 0 015-5z" stroke="#5DCAA5" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 17h4" stroke="#5DCAA5" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="sc-content">
+          <h4>Consultoría personalizada</h4>
+          <p>Estrategia de IA a medida: qué implementar, cómo y cuándo para tu negocio específico</p>
+        </div>
+        <div class="sc-badge">Punto de entrada</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust">
+  <div class="trust-inner">
+    <span class="trust-label">Trabajamos con negocios de</span>
+    <div class="trust-items">
+      <span class="trust-item">Gastronomía</span>
+      <span class="trust-item">E-commerce</span>
+      <span class="trust-item">Salud &amp; Bienestar</span>
+      <span class="trust-item">Servicios profesionales</span>
+      <span class="trust-item">Educación</span>
+      <span class="trust-item">Retail</span>
+    </div>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="section-inner">
+    <div class="section-tag fade-up">El problema</div>
+    <h2 class="fade-up">Tu negocio pierde tiempo todos los días en tareas que la IA puede hacer sola</h2>
+    <div class="problem-grid">
+      <div class="problem-card fade-up">
+        <div class="problem-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="8" stroke="#1D9E75" stroke-width="1.5"/><path d="M10 6v4l3 3" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Horas perdidas en tareas repetitivas</h3>
+        <p>Responder las mismas preguntas, cargar datos, hacer seguimiento de clientes manualmente. Todo eso se puede automatizar.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <div class="problem-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 16s1-3 5-3 7 3 7 3" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/><circle cx="10" cy="8" r="4" stroke="#1D9E75" stroke-width="1.5"/></svg>
+        </div>
+        <h3>Clientes sin atención fuera del horario</h3>
+        <p>Consultas que llegan a las 11pm y no tienen respuesta hasta el día siguiente. Un chatbot bien armado resuelve eso 24/7.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <div class="problem-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 10h14M3 6h14M3 14h8" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Reportes que se hacen a mano cada semana</h3>
+        <p>Números en planillas, resúmenes para reuniones, informes de ventas. Con IA se generan solos y sin errores.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <div class="problem-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="8" stroke="#1D9E75" stroke-width="1.5"/><path d="M10 8v2l1.5 1.5" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <h3>No sabés por dónde empezar con la IA</h3>
+        <p>Hay demasiadas opciones y poco tiempo para investigar. Nosotros te decimos exactamente qué tiene sentido para tu negocio específico.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="servicios">
+  <div class="section-inner">
+    <div class="services-header">
+      <div>
+        <div class="section-tag fade-up">Servicios</div>
+        <h2 class="fade-up">Lo que hacemos<br>en Varka</h2>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card featured fade-up">
+        <div class="service-num">01</div>
+        <div class="service-badge">Más solicitado</div>
+        <h3>Chatbots y Agentes de IA</h3>
+        <p>Desde chatbots para WhatsApp o tu web hasta agentes de IA que navegan sistemas, generan documentos y toman decisiones — todo sin que estés presente.</p>
+        <div class="service-price">desde $800 <span>USD</span></div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-num">02</div>
+        <div class="service-badge">Mayor ROI</div>
+        <h3>Automatización de procesos</h3>
+        <p>Eliminamos las tareas que tu equipo hace a mano todos los días: seguimientos, reportes, carga de datos, facturación. Tu equipo se enfoca en lo que realmente importa.</p>
+        <div class="service-price">desde $500 <span>USD</span></div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-num">03</div>
+        <div class="service-badge">Punto de entrada</div>
+        <h3>Asesoría estratégica</h3>
+        <p>Analizamos tu negocio e identificamos exactamente dónde la IA genera más impacto. Te entregamos un plan claro con prioridades y costos estimados.</p>
+        <div class="service-price">desde $120 <span>USD / sesión</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="section-inner">
+    <div class="section-tag fade-up">Lo que dicen nuestros clientes</div>
+    <h2 class="fade-up">Resultados reales,<br>negocios reales</h2>
+    <div class="testi-grid">
+      <div class="testi-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Antes perdíamos 2 horas al día respondiendo WhatsApp. Ahora el chatbot maneja el 80% de las consultas solo y nosotros nos enfocamos en lo que realmente importa."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">MG</div>
+          <div>
+            <div class="testi-name">Mariana G.</div>
+            <div class="testi-role">Dueña · La Bicicleta Resto</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"El diagnóstico gratuito me abrió los ojos. En tres semanas automatizamos los reportes semanales y el equipo recuperó 4 horas por semana. El ROI fue inmediato."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">RT</div>
+          <div>
+            <div class="testi-name">Rodrigo T.</div>
+            <div class="testi-role">Dir. de Operaciones · e-commerce</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Pensé que la IA era solo para empresas grandes. Varka me mostró que con una inversión accesible podía automatizar lo que me llevaba medio día cada semana."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">CM</div>
+          <div>
+            <div class="testi-name">Carolina M.</div>
+            <div class="testi-role">Coach &amp; Consultora independiente</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="how" id="proceso">
+  <div class="section-inner">
+    <div class="section-tag fade-up">Cómo trabajamos</div>
+    <h2 class="fade-up">Del primer contacto al resultado en menos de 6 semanas</h2>
+    <div class="how-steps">
+      <div class="how-step fade-up">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <div class="step-tag">Gratis</div>
+          <h3>Diagnóstico de 1 hora</h3>
+          <p>Conocemos tu negocio, entendemos dónde perdés tiempo y dinero, e identificamos las oportunidades con mayor impacto. Sin costo, sin compromiso.</p>
+        </div>
+      </div>
+      <div class="how-step fade-up">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <div class="step-tag">Día 5–7</div>
+          <h3>Propuesta concreta</h3>
+          <p>Te enviamos un documento simple con entregables, precio fijo y plazo estimado. Nada de presupuestos vagos ni sorpresas.</p>
+        </div>
+      </div>
+      <div class="how-step fade-up">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <div class="step-tag">Semana 2</div>
+          <h3>Kickoff y desarrollo</h3>
+          <p>Con el 50% de adelanto confirmado, arrancamos. Te mostramos avances en la mitad del proyecto para que vayas viendo cómo queda.</p>
+        </div>
+      </div>
+      <div class="how-step fade-up">
+        <div class="step-num">04</div>
+        <div class="step-content">
+          <div class="step-tag">Semana 3–6</div>
+          <h3>Entrega y capacitación</h3>
+          <p>Implementamos la solución, capacitamos a tu equipo en 30 minutos y entregamos documentación clara. El resto del pago va acá.</p>
+        </div>
+      </div>
+      <div class="how-step fade-up">
+        <div class="step-num">05</div>
+        <div class="step-content">
+          <div class="step-tag">Mes 2 en adelante</div>
+          <h3>Soporte continuo (opcional)</h3>
+          <p>Podés sumar un plan de mantenimiento mensual para que todo siga funcionando y mejorando con el tiempo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RETAINER -->
+<section class="retainer" id="planes">
+  <div class="section-inner">
+    <div class="section-tag fade-up">Planes de soporte</div>
+    <h2 class="fade-up">Estabilidad mensual,<br>mejora continua</h2>
+    <p class="fade-up">Después de implementar tu solución, podés contratar soporte mensual para mantenimiento, mejoras y asesoría continua.</p>
+    <div class="retainer-grid">
+      <div class="retainer-card fade-up">
+        <h3>Básico</h3>
+        <div class="price">$200</div>
+        <div class="price-sub">USD por mes</div>
+        <ul class="retainer-features">
+          <li>Mantenimiento de 1 solución implementada</li>
+          <li>2 horas de atención mensual</li>
+          <li>Soporte por WhatsApp</li>
+          <li>Respuesta en 24 hs hábiles</li>
+        </ul>
+        <a class="card-cta" href="#contacto">Empezar</a>
+      </div>
+      <div class="retainer-card featured fade-up">
+        <h3>Estándar</h3>
+        <div class="price">$400</div>
+        <div class="price-sub">USD por mes</div>
+        <ul class="retainer-features">
+          <li>Mantenimiento + pequeñas mejoras</li>
+          <li>1 sesión de asesoría mensual incluida</li>
+          <li>4 horas de atención mensual</li>
+          <li>Prioridad en respuestas</li>
+        </ul>
+        <a class="card-cta" href="#contacto">Empezar</a>
+      </div>
+      <div class="retainer-card fade-up">
+        <h3>Avanzado</h3>
+        <div class="price">$700</div>
+        <div class="price-sub">USD por mes</div>
+        <ul class="retainer-features">
+          <li>Socio IA: mejoras y nuevas automatizaciones</li>
+          <li>Asesoría estratégica mensual</li>
+          <li>8 horas de atención mensual</li>
+          <li>Acceso prioritario a nuevos servicios</li>
+        </ul>
+        <a class="card-cta" href="#contacto">Empezar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="section-inner">
+    <div class="section-tag fade-up">Preguntas frecuentes</div>
+    <h2 class="fade-up">Todo lo que necesitás<br>saber antes de arrancar</h2>
+    <div class="faq-list fade-up">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          ¿Necesito tener conocimientos técnicos?
+          <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2v8" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+        </button>
+        <div class="faq-a"><p>No. Nos encargamos de todo el desarrollo e implementación. Vos solo nos contás tu negocio y nosotros te decimos qué tiene sentido hacer y cómo va a funcionar.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          ¿Qué herramientas de IA usan?
+          <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2v8" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+        </button>
+        <div class="faq-a"><p>Usamos las mejores herramientas según el caso: OpenAI, Make, Zapier, n8n, Botpress, Manychat y más. Siempre elegimos la que mejor se adapta a tu presupuesto y necesidades específicas.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          ¿Cuánto tiempo lleva implementar una solución?
+          <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2v8" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+        </button>
+        <div class="faq-a"><p>Depende del tipo: una automatización puede estar lista en 1–2 semanas, un chatbot en 2–4 semanas, un agente de IA más complejo en 4–6 semanas. En el diagnóstico te damos el plazo exacto para tu caso.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          ¿Cómo sé qué solución me conviene: chatbot, automatización o agente de IA?
+          <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2v8" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+        </button>
+        <div class="faq-a"><p>Eso es exactamente lo que analizamos en el diagnóstico gratuito. Cada negocio tiene necesidades distintas y hay soluciones que generan más impacto según tu caso. Te recomendamos la mejor opción sin empujarte a la más cara.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          ¿Trabajan con negocios de cualquier tamaño?
+          <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2v8" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+        </button>
+        <div class="faq-a"><p>Sí. Trabajamos con emprendedores unipersonales, startups y pymes de hasta 100 personas. El tamaño no importa, lo que importa es que querés crecer y optimizar tu negocio.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          ¿El diagnóstico es realmente gratuito y sin compromiso?
+          <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6 2v8" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+        </button>
+        <div class="faq-a"><p>100% gratuito, sin compromiso. Si al terminar la sesión decidís que no es el momento, no hay ningún problema. De todas formas te llevás insights valiosos sobre tu negocio.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contacto">
+  <h2 class="fade-up">¿Cuánto tiempo pierde tu equipo hoy en tareas que puede hacer la IA?</h2>
+  <p class="fade-up">Agendá un diagnóstico gratuito de 1 hora. Te decimos exactamente qué podemos hacer por tu negocio — sin compromiso.</p>
+  <div class="cta-btns fade-up">
+    <a class="btn-dark" href="https://cal.com/consultora-varka/diagnostico-gratuito" target="_blank" rel="noopener">
+      Quiero mi diagnóstico gratuito
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+  <div class="cta-email-row fade-up">
+    <span>O escribinos directo:</span>
+    <a class="cta-email-link" href="https://mail.google.com/mail/?view=cm&to=consultas@varka.tech&su=Consulta desde varka.tech" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7l8 5 8-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      consultas@varka.tech
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <a class="footer-logo" href="#">
+        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <polygon points="14,2 24.5,8 24.5,20 14,26 3.5,20 3.5,8" stroke="#5DCAA5" stroke-width="1.75" fill="rgba(29,158,117,.08)" stroke-linejoin="round"/>
+          <circle cx="14" cy="14" r="3" fill="#1D9E75"/>
+          <line x1="14" y1="2" x2="14" y2="11" stroke="#5DCAA5" stroke-width="1" opacity=".4"/>
+          <line x1="14" y1="17" x2="14" y2="26" stroke="#5DCAA5" stroke-width="1" opacity=".4"/>
+          <line x1="3.5" y1="8" x2="11" y2="12" stroke="#5DCAA5" stroke-width="1" opacity=".4"/>
+          <line x1="17" y1="16" x2="24.5" y2="20" stroke="#5DCAA5" stroke-width="1" opacity=".4"/>
+        </svg>
+        Varka
+      </a>
+      <p class="footer-tagline">Consultoría de IA para pymes que quieren crecer sin complicarse.</p>
+      <a class="footer-email" href="https://mail.google.com/mail/?view=cm&to=consultas@varka.tech&su=Consulta desde varka.tech" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2" y="4" width="16" height="12" rx="2" stroke="#5DCAA5" stroke-width="1.5"/><path d="M2 7l8 5 8-5" stroke="#5DCAA5" stroke-width="1.5" stroke-linecap="round"/></svg>
+        consultas@varka.tech
+      </a>
+      <a class="footer-email" href="https://wa.me/5491164129112" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="#5DCAA5" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.2 4.79 1.2 5.46 0 9.91-4.44 9.91-9.9C21.95 6.45 17.5 2 12.04 2zm0 18.13c-1.52 0-3.01-.41-4.3-1.18l-.31-.18-3.12.82.83-3.04-.2-.32a8.13 8.13 0 01-1.25-4.34c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 012.41 5.82c0 4.54-3.69 8.23-8.23 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42-.14-.01-.31-.01-.48-.01-.16 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+        +54 9 11 6412-9112
+      </a>
+    </div>
+    <div class="footer-col">
+      <h4>Soluciones</h4>
+      <ul>
+        <li><a href="/consultora-ia">Consultora de IA</a></li>
+        <li><a href="/automatizaciones-ia">Automatizaciones con IA</a></li>
+        <li><a href="/agentes-de-ia">Agentes de IA</a></li>
+        <li><a href="#planes">Planes de soporte</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="#proceso">Cómo trabajamos</a></li>
+        <li><a href="#faq">Preguntas frecuentes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Seguinos</h4>
+      <ul>
+        <li><a href="https://www.linkedin.com/company/varka-consultora/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/consultoravarka/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://wa.me/5491164129112" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Varka. Todos los derechos reservados.</p>
+    <div class="footer-links">
+      <a href="#">Términos y condiciones</a>
+      <a href="#">Privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" id="back-top" aria-label="Volver al inicio">
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 12V4M4 8l4-4 4 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<!-- ══════════════════════════════════════════
+     VARKA AI CHAT WIDGET
+     ══════════════════════════════════════════ -->
+<style>
+  /* ── Chat bubble ── */
+  .ai-bubble {
+    position: fixed; bottom: 1.5rem; right: 1.5rem;
+    width: 56px; height: 56px; border-radius: 50%;
+    background: var(--verde-marca); border: none;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    z-index: 200; box-shadow: 0 4px 24px rgba(29,158,117,.45);
+    transition: background .25s, transform .25s, box-shadow .25s;
+  }
+  .ai-bubble:hover { background: #16835f; transform: scale(1.08); box-shadow: 0 6px 32px rgba(29,158,117,.55); }
+  .ai-bubble.open { background: var(--texto-oscuro); box-shadow: 0 4px 20px rgba(0,0,0,.3); }
+  .ai-bubble-icon, .ai-bubble-close { position: absolute; transition: opacity .25s, transform .25s; }
+  .ai-bubble-close { opacity: 0; transform: scale(.5) rotate(-90deg); }
+  .ai-bubble.open .ai-bubble-icon { opacity: 0; transform: scale(.5); }
+  .ai-bubble.open .ai-bubble-close { opacity: 1; transform: scale(1) rotate(0); }
+  .ai-badge {
+    position: absolute; top: -3px; right: -3px;
+    width: 19px; height: 19px; border-radius: 50%;
+    background: #e05c5c; border: 2.5px solid var(--blanco);
+    font-size: .65rem; font-weight: 700; color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    transition: opacity .25s, transform .25s;
+  }
+  .ai-badge.hidden { opacity: 0; transform: scale(0); pointer-events: none; }
+
+  /* ── Panel ── */
+  .ai-panel {
+    position: fixed; bottom: 5.5rem; right: 1.5rem;
+    width: 370px; display: flex; flex-direction: column;
+    background: var(--blanco); border-radius: 20px;
+    box-shadow: 0 24px 80px rgba(0,0,0,.2), 0 4px 16px rgba(0,0,0,.07);
+    border: 1px solid rgba(15,42,30,.08);
+    z-index: 199; max-height: min(560px, calc(100vh - 7rem));
+    opacity: 0; transform: translateY(14px) scale(.97); pointer-events: none;
+    transition: opacity .3s cubic-bezier(.34,1.56,.64,1), transform .3s cubic-bezier(.34,1.56,.64,1);
+  }
+  .ai-panel.open { opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; }
+
+  .ai-panel-hdr {
+    background: var(--verde-noche); border-radius: 20px 20px 0 0;
+    padding: 1rem 1.25rem; display: flex; align-items: center; gap: 12px; flex-shrink: 0;
+  }
+  .ai-panel-avatar {
+    width: 38px; height: 38px; border-radius: 50%; flex-shrink: 0;
+    background: linear-gradient(135deg, var(--verde-marca), var(--verde-claro));
+    display: flex; align-items: center; justify-content: center;
+  }
+  .ai-panel-name { font-size: .9375rem; font-weight: 500; color: var(--menta); }
+  .ai-panel-status { font-size: .75rem; color: var(--verde-claro); display: flex; align-items: center; gap: 5px; margin-top: 2px; }
+
+  .ai-msgs {
+    flex: 1; overflow-y: auto; padding: 1.25rem; display: flex; flex-direction: column; gap: 10px;
+    min-height: 0; scroll-behavior: smooth;
+  }
+  .ai-msgs::-webkit-scrollbar { width: 4px; }
+  .ai-msgs::-webkit-scrollbar-thumb { background: rgba(15,42,30,.12); border-radius: 4px; }
+
+  .ai-msg { max-width: 86%; padding: .625rem .9rem; font-size: .875rem; line-height: 1.6; animation: fadeUp .25s ease; }
+  .ai-msg-user { background: var(--verde-noche); color: var(--menta); align-self: flex-end; border-radius: 14px 14px 3px 14px; }
+  .ai-msg-bot  { background: var(--menta); color: var(--texto-oscuro); align-self: flex-start; border-radius: 14px 14px 14px 3px; }
+  .ai-calendly-btn {
+    display: inline-block; margin-top: .6rem;
+    background: var(--verde-marca); color: #fff; font-size: .8rem; font-weight: 500;
+    padding: .5rem 1.1rem; border-radius: 100px; text-decoration: none;
+    transition: background .2s;
+  }
+  .ai-calendly-btn:hover { background: #22b887; }
+
+  .ai-typing {
+    display: flex; gap: 4px; padding: .625rem .875rem;
+    background: var(--menta); border-radius: 14px 14px 14px 3px;
+    align-self: flex-start; animation: fadeUp .25s ease;
+  }
+  .ai-typing span { width: 6px; height: 6px; border-radius: 50%; background: var(--verde-marca); animation: bounce 1.2s infinite; }
+  .ai-typing span:nth-child(2) { animation-delay: .2s; }
+  .ai-typing span:nth-child(3) { animation-delay: .4s; }
+
+
+  .ai-input-row {
+    padding: .875rem 1.25rem; border-top: 1px solid rgba(15,42,30,.06);
+    display: flex; gap: 8px; align-items: flex-end; flex-shrink: 0;
+  }
+  .ai-input {
+    flex: 1; background: var(--arena); border: 1px solid rgba(15,42,30,.1); border-radius: 10px;
+    padding: .5rem .75rem; font-size: .875rem; color: var(--texto-oscuro);
+    font-family: inherit; outline: none; resize: none; min-height: 36px; max-height: 80px; line-height: 1.5;
+    transition: border-color .2s;
+  }
+  .ai-input:focus { border-color: var(--verde-marca); }
+  .ai-input::placeholder { color: rgba(10,31,22,.35); }
+  .ai-send {
+    width: 36px; height: 36px; border-radius: 9px; background: var(--verde-marca);
+    border: none; cursor: pointer; display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; transition: background .2s, transform .1s;
+  }
+  .ai-send:hover { background: #16835f; }
+  .ai-send:active { transform: scale(.92); }
+  .ai-send:disabled { background: rgba(15,42,30,.2); cursor: not-allowed; }
+  .ai-note { text-align: center; font-size: .68rem; color: rgba(10,31,22,.28); padding: .3rem 0 .5rem; flex-shrink: 0; }
+
+  @media (max-width: 480px) {
+    .ai-panel { width: calc(100vw - 2rem); right: 1rem; bottom: 4.75rem; }
+    .ai-bubble { right: 1rem; }
+    .back-top { right: 4.5rem; }
+  }
+
+  /* PROACTIVE TOOLTIP */
+  .ai-tooltip {
+    position: fixed; bottom: 5.5rem; right: 1.5rem;
+    background: white; color: var(--texto-oscuro);
+    padding: .75rem 1rem; border-radius: 12px 12px 0 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.15);
+    font-size: .875rem; line-height: 1.4; max-width: 220px;
+    cursor: pointer; z-index: 99;
+    opacity: 0; transform: translateY(8px) scale(.95);
+    transition: opacity .35s ease, transform .35s ease;
+    pointer-events: none;
+  }
+  .ai-tooltip.show { opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; }
+  .ai-tooltip::after {
+    content: '';
+    position: absolute; bottom: -8px; right: 0;
+    border-left: 8px solid white; border-bottom: 8px solid transparent;
+  }
+  .ai-tooltip-close {
+    position: absolute; top: 4px; right: 6px;
+    background: none; border: none; cursor: pointer;
+    color: var(--texto-medio); font-size: 14px; line-height: 1; padding: 2px 4px;
+  }
+</style>
+
+<!-- ── PROACTIVE TOOLTIP ── -->
+<div class="ai-tooltip" id="aiTooltip" role="status">
+  <button class="ai-tooltip-close" id="aiTooltipClose" aria-label="Cerrar">×</button>
+  ¿Automatizás algo en tu negocio? Puedo ayudarte a ver qué conviene 👋
+</div>
+
+<!-- ── CHAT BUBBLE ── -->
+<button class="ai-bubble" id="aiBubble" aria-label="Abrir chat con Varka AI" aria-expanded="false">
+  <svg class="ai-bubble-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <svg class="ai-bubble-close" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+  <div class="ai-badge" id="aiBadge">1</div>
+</button>
+
+<!-- ── CHAT PANEL ── -->
+<div class="ai-panel" id="aiPanel" role="dialog" aria-modal="true" aria-label="Chat con Varka AI">
+  <div class="ai-panel-hdr">
+    <div class="ai-panel-avatar">
+      <svg viewBox="0 0 28 28" fill="none" width="20" height="20" aria-hidden="true">
+        <polygon points="14,2 24.5,8 24.5,20 14,26 3.5,20 3.5,8" stroke="white" stroke-width="1.75" fill="rgba(255,255,255,.1)" stroke-linejoin="round"/>
+        <circle cx="14" cy="14" r="3" fill="white"/>
+      </svg>
+    </div>
+    <div style="flex:1">
+      <div class="ai-panel-name">Varka AI</div>
+      <div class="ai-panel-status"><span class="status-dot"></span>En línea ahora</div>
+    </div>
+    <button id="aiClose" aria-label="Cerrar chat" style="background:none;border:none;cursor:pointer;padding:4px;display:flex;align-items:center;justify-content:center;border-radius:6px;transition:background .2s;" onmouseover="this.style.background='rgba(225,245,238,.1)'" onmouseout="this.style.background='none'">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M12 4L4 12M4 4l8 8" stroke="rgba(225,245,238,.7)" stroke-width="1.75" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="ai-msgs" id="aiMsgs"></div>
+
+
+  <div class="ai-input-row">
+    <textarea class="ai-input" id="aiInput" placeholder="Escribí tu pregunta..." rows="1" aria-label="Mensaje para Varka AI"></textarea>
+    <button class="ai-send" id="aiSend" aria-label="Enviar mensaje">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+  <div class="ai-note">Impulsado por Claude AI · Varka</div>
+</div>
+
+<script>
+// ══════════════════════════════════════════════════════════════════
+//  VARKA AI CHAT — API key guardada en Netlify (variable de entorno)
+// ══════════════════════════════════════════════════════════════════
+const SHEETS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbypGnd5xdTOk9zLT6JMmToTWdxIGfW2lQ2I-QdGiiqG2KcGZyOcFE4f60FvTEA4_zjD/exec';
+
+const VARKA_SYSTEM = `Sos Varka AI, el asistente inteligente de Varka — consultora de inteligencia artificial para pymes y emprendedores de Argentina, Uruguay y Chile.
+
+Tu rol: ayudar al visitante a entender cómo Varka puede mejorar su negocio, responder sus dudas y guiarlo hacia el diagnóstico gratuito de 1 hora.
+
+═══ SOBRE VARKA ═══
+Email: consultas@varka.tech | Web: varka.tech | Fundada: 2025
+Países: Argentina, Uruguay, Chile
+
+═══ SERVICIOS ═══
+1. CHATBOTS Y ASISTENTES — desde $800 USD (el más solicitado)
+   Para WhatsApp, web o Instagram. Atienden 24/7, califican leads, agendan citas. Entrega: 2-4 semanas.
+
+2. AUTOMATIZACIÓN DE PROCESOS — desde $500 USD (mayor ROI)
+   Elimina tareas repetitivas: reportes, seguimientos, carga de datos, facturación. Entrega: 1-2 semanas.
+
+3. ASESORÍA ESTRATÉGICA — desde $120 USD/sesión (punto de entrada ideal)
+   Análisis del negocio + plan concreto de IA con prioridades y costos estimados.
+
+═══ PLANES DE SOPORTE MENSUAL ═══
+Básico $200/mes: 1 solución, 2hs atención, WhatsApp, respuesta 24hs.
+Estándar $400/mes: mejoras pequeñas, 1 sesión asesoría incluida, 4hs (el más elegido).
+Avanzado $700/mes: socio IA, asesoría mensual, 8hs, acceso prioritario.
+
+═══ PROCESO ═══
+1. Diagnóstico gratuito 1 hora (sin compromiso)
+2. Propuesta concreta días 5-7 (precio fijo, plazo claro)
+3. Kickoff semana 2 con 50% adelanto
+4. Entrega semana 3-6 + capacitación 30 min al equipo
+5. Soporte mensual opcional desde mes 2
+
+═══ PREGUNTAS FRECUENTES ═══
+¿Necesito conocimientos técnicos? No. Varka se encarga de todo.
+¿Qué herramientas usan? OpenAI, Make, Zapier, n8n, Botpress, Manychat y más según el caso.
+¿El diagnóstico es gratis? Sí, 100% gratuito y sin compromiso.
+Modalidad de pago: 50% adelanto + 50% al entregar.
+Tamaño de negocios: desde emprendedores unipersonales hasta 100 personas.
+Si el bot no sabe algo, deriva automáticamente a un humano.
+
+═══ COMPORTAMIENTO ═══
+- Hablá en español rioplatense: "vos", "tenés", "podés". NUNCA uses "tú" ni "usted".
+- Sé amigable, directo y sin tecnicismos.
+- Mensajes cortos (máx 3-4 oraciones). Preferí varios cortos a uno largo.
+- Máx 1 emoji por mensaje, solo si suma al tono.
+- Hacé preguntas de calificación naturales: "¿Qué tipo de negocio tenés?", "¿Cuál es el proceso que más tiempo te consume?".
+- Si quieren agendar el diagnóstico: antes de dar el link, asegurate de tener su nombre, email Y teléfono. Pedí los tres datos juntos si no los tenés: "Para enviarte el link necesito tu nombre, email y teléfono 😊". Una vez que los tenés, respondé normalmente Y agregá al final sin explicarlo, en este orden exacto:
+<!--LEAD:{"nombre":"NOMBRE","email":"EMAIL","telefono":"TELEFONO","empresa":"EMPRESA","negocio":"TIPO_DE_NEGOCIO","servicio":"SERVICIO_DE_INTERES","problema":"PROBLEMA_PRINCIPAL","consulta":"RESUMEN_COMPLETO_DE_LA_CONVERSACION"}-->
+<!--CALENDLY:{"nombre":"NOMBRE","email":"EMAIL","telefono":"TELEFONO"}-->
+(reemplazá cada campo con los datos reales del usuario)
+- Para otras consultas: invitalos a escribir a consultas@varka.tech.
+- Si el usuario da su nombre, usalo en la conversación.
+- Si no sabés algo específico de su caso, derivá al diagnóstico gratuito.
+- No inventes precios ni datos que no estén en este prompt.
+
+═══ CAPTURA DE LEADS ═══
+Cuando el usuario te dé su nombre Y al menos un dato de contacto (email o teléfono), agregá al FINAL de tu respuesta —sin mencionarlo ni explicarlo al usuario— este bloque exacto:
+<!--LEAD:{"nombre":"NOMBRE","email":"EMAIL","telefono":"TELEFONO","empresa":"EMPRESA","negocio":"TIPO_DE_NEGOCIO","servicio":"SERVICIO_DE_INTERES","problema":"PROBLEMA_PRINCIPAL","consulta":"RESUMEN_COMPLETO_DE_LA_CONVERSACION"}-->
+Reemplazá cada campo con los datos reales. Si no tenés un dato, dejá el valor como string vacío "".
+- negocio: tipo/rubro del negocio (ej: "panadería", "e-commerce de ropa", "clínica dental")
+- servicio: qué servicio de Varka le interesa (ej: "chatbot para WhatsApp", "automatización de facturación")
+- problema: el dolor o proceso que quiere resolver
+- consulta: resumen completo de todo lo hablado hasta ahora
+IMPORTANTE: Cuando incluyas <!--CALENDLY:...-->, siempre incluí también <!--LEAD:...--> en la MISMA respuesta (el LEAD va antes que el CALENDLY).`;
+
+// ══════════════════════════════════════════════════════════════════
+//  ESTADO Y REFERENCIAS
+// ══════════════════════════════════════════════════════════════════
+let aiHistory     = [];
+let aiOpen        = false;
+let aiLoading     = false;
+let aiLeadSaved   = false;
+let aiCalendlyUrl = '';
+
+const aiPanel  = document.getElementById('aiPanel');
+const aiBubble = document.getElementById('aiBubble');
+const aiBadge  = document.getElementById('aiBadge');
+const aiMsgs   = document.getElementById('aiMsgs');
+const aiInput  = document.getElementById('aiInput');
+const aiSend   = document.getElementById('aiSend');
+
+// ── TOOLTIP PROACTIVO ────────────────────────────────────────────
+const aiTooltip = document.getElementById('aiTooltip');
+const aiTooltipClose = document.getElementById('aiTooltipClose');
+
+function hideTooltip() { aiTooltip.classList.remove('show'); }
+
+setTimeout(() => {
+  if (!aiOpen) aiTooltip.classList.add('show');
+}, 8000);
+
+aiTooltip.addEventListener('click', (e) => {
+  if (e.target === aiTooltipClose || aiTooltipClose.contains(e.target)) return;
+  hideTooltip();
+  if (!aiOpen) toggleAiPanel();
+});
+aiTooltipClose.addEventListener('click', (e) => {
+  e.stopPropagation();
+  hideTooltip();
+});
+
+// ── ABRIR / CERRAR ────────────────────────────────────────────────
+function toggleAiPanel() {
+  aiOpen = !aiOpen;
+  aiPanel.classList.toggle('open', aiOpen);
+  aiBubble.classList.toggle('open', aiOpen);
+  aiBubble.setAttribute('aria-expanded', aiOpen);
+  if (aiOpen) {
+    hideTooltip();
+    aiBadge.classList.add('hidden');
+    if (aiHistory.length === 0) aiGreet();
+    setTimeout(() => aiInput.focus(), 320);
+  }
+}
+aiBubble.addEventListener('click', toggleAiPanel);
+document.getElementById('aiClose').addEventListener('click', toggleAiPanel);
+
+// Hero widget → abre el panel
+const heroWidget = document.querySelector('.chat-widget');
+if (heroWidget) {
+  heroWidget.setAttribute('role', 'button');
+  heroWidget.setAttribute('tabindex', '0');
+  heroWidget.title = 'Chateá con Varka AI en vivo';
+  heroWidget.addEventListener('click', () => { if (!aiOpen) toggleAiPanel(); });
+  heroWidget.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); if (!aiOpen) toggleAiPanel(); }
+  });
+}
+
+// ── RENDER ────────────────────────────────────────────────────────
+function aiAddMsg(text, role) {
+  const el = document.createElement('div');
+  el.className = 'ai-msg ' + (role === 'user' ? 'ai-msg-user' : 'ai-msg-bot');
+  if (role === 'bot') {
+    const btnMatch = text.match(/\n\n__CALENDLY_BTN__(https?:\/\/[^\s]+)/);
+    const displayText = text.replace(/\n\n__CALENDLY_BTN__.*$/, '');
+    let html = displayText.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+      .replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank" rel="noopener" style="color:#5DCAA5;text-decoration:underline;word-break:break-all;">$1</a>');
+    if (btnMatch) {
+      html += '<br><a class="ai-calendly-btn" href="' + btnMatch[1] + '" target="_blank" rel="noopener">Agendar ahora →</a>';
+    }
+    el.innerHTML = html;
+  } else {
+    el.textContent = text;
+  }
+  aiMsgs.appendChild(el);
+  aiMsgs.scrollTop = aiMsgs.scrollHeight;
+}
+function aiShowTyping() {
+  const el = document.createElement('div');
+  el.className = 'ai-typing'; el.id = 'aiTyping';
+  el.innerHTML = '<span></span><span></span><span></span>';
+  aiMsgs.appendChild(el); aiMsgs.scrollTop = aiMsgs.scrollHeight;
+}
+function aiHideTyping() { document.getElementById('aiTyping')?.remove(); }
+
+// ── SALUDO INICIAL ────────────────────────────────────────────────
+function aiGreet() {
+  const msg = '¡Hola! Soy Varka AI 👋 Preguntame lo que quieras sobre nuestros servicios, precios o cómo podemos ayudar a tu negocio.';
+  aiAddMsg(msg, 'bot');
+  aiHistory.push({ role: 'assistant', content: msg });
+}
+
+
+// ── ENVIAR MENSAJE ────────────────────────────────────────────────
+async function aiSendMsg(text) {
+  if (!text.trim() || aiLoading) return;
+  aiLoading = true;
+  aiSend.disabled = true;
+  aiInput.value = '';
+  aiInput.style.height = 'auto';
+
+  aiAddMsg(text, 'user');
+  aiHistory.push({ role: 'user', content: text });
+  aiShowTyping();
+
+  try {
+    const reply = await aiCallClaude(aiHistory);
+    aiHideTyping();
+    const leadMatch = reply.match(/<!--LEAD:([\s\S]*?)-->/);
+    const calendlyMatch = reply.match(/<!--CALENDLY:([\s\S]*?)-->/);
+    let cleanReply = reply.replace(/<!--LEAD:[\s\S]*?-->/, '').replace(/<!--CALENDLY:[\s\S]*?-->/, '').trim();
+    // Procesar Calendly primero para tener la URL al guardar el lead
+    let newCalendlyUrl = '';
+    if (calendlyMatch) {
+      try {
+        const cd = JSON.parse(calendlyMatch[1]);
+        newCalendlyUrl = 'https://cal.com/consultora-varka/diagnostico-gratuito'
+          + '?name=' + encodeURIComponent(cd.nombre || '')
+          + '&email=' + encodeURIComponent(cd.email || '');
+        aiCalendlyUrl = newCalendlyUrl;
+      } catch(e) {}
+    }
+    if (leadMatch) {
+      try {
+        const ld = JSON.parse(leadMatch[1]);
+        if (aiCalendlyUrl) ld.calendly_url = aiCalendlyUrl;
+        saveLead(ld);
+        aiLeadSaved = true;
+      } catch(e) {}
+    } else if (newCalendlyUrl && !aiLeadSaved) {
+      try {
+        const cd = JSON.parse(calendlyMatch[1]);
+        saveLead({ nombre: cd.nombre||'', email: cd.email||'', telefono: cd.telefono||'', calendly_url: newCalendlyUrl });
+        aiLeadSaved = true;
+      } catch(e) {}
+    } else if (newCalendlyUrl && aiLeadSaved) {
+      saveLead({ calendly_url: newCalendlyUrl, _update: true });
+    }
+    if (newCalendlyUrl) {
+      cleanReply += '\n\n__CALENDLY_BTN__' + newCalendlyUrl;
+    }
+    aiAddMsg(cleanReply, 'bot');
+    aiHistory.push({ role: 'assistant', content: cleanReply.replace(/\n\n__CALENDLY_BTN__.*$/, '') });
+  } catch (err) {
+    aiHideTyping();
+    aiAddMsg(
+      err.message === 'NO_KEY'
+        ? 'El chat aún está en configuración. Mientras tanto, escribinos a consultas@varka.tech y te respondemos en seguida 🙂'
+        : 'Hubo un problema técnico. Por favor escribinos a consultas@varka.tech y te respondemos enseguida.',
+      'bot'
+    );
+  }
+
+  aiLoading = false;
+  aiSend.disabled = false;
+  aiInput.focus();
+}
+
+// ── GUARDAR LEAD EN GOOGLE SHEETS ────────────────────────────────
+function saveLead(data) {
+  try {
+    const url = SHEETS_ENDPOINT + '?data=' + encodeURIComponent(JSON.stringify(data));
+    fetch(url, { mode: 'no-cors' });
+  } catch(e) {}
+}
+
+// ── LLAMADA AL API VIA NETLIFY FUNCTION ───────────────────────────
+async function aiCallClaude(messages) {
+  const res = await fetch('/.netlify/functions/chat', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({
+      model: 'claude-haiku-4-5-20251001',
+      max_tokens: 512,
+      system: VARKA_SYSTEM,
+      messages
+    })
+  });
+
+  if (!res.ok) {
+    const e = await res.json().catch(() => ({}));
+    throw new Error(e.error?.message || 'API error');
+  }
+  return (await res.json()).content[0].text;
+}
+
+// ── INPUT HANDLERS ────────────────────────────────────────────────
+aiSend.addEventListener('click', () => aiSendMsg(aiInput.value.trim()));
+aiInput.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); aiSendMsg(aiInput.value.trim()); }
+});
+aiInput.addEventListener('input', () => {
+  aiInput.style.height = 'auto';
+  aiInput.style.height = Math.min(aiInput.scrollHeight, 80) + 'px';
+});
+</script>
+
+<script>
+  // Mobile nav
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => {
+    const open = mobileNav.classList.toggle('open');
+    hamburger.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', open);
+    mobileNav.setAttribute('aria-hidden', !open);
+  });
+  mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobileNav.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    mobileNav.setAttribute('aria-hidden', 'true');
+  }));
+
+  // Nav shrink + back to top
+  const nav = document.getElementById('nav');
+  const backTop = document.getElementById('back-top');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+    backTop.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+  backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // Scroll animations
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(el => {
+        el.classList.remove('open');
+        el.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+    });
+  });
+</script>
+</body>
+</html>
