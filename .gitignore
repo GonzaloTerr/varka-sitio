@@ -1,0 +1,9 @@
+# Netlify (estado local del CLI)
+.netlify/
+
+# Dependencias (por si se agregan a las functions)
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
