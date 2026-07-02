@@ -1,0 +1,36 @@
+# Varka — Consultora de IA para pymes
+
+> Varka es una consultora de inteligencia artificial para pequeñas y medianas empresas (pymes) de Argentina y Latinoamérica. Implementa agentes de IA, automatizaciones y chatbots de WhatsApp que resuelven tareas internas y repetitivas: actualización de precios, stock, pedidos, remitos, reportes, conciliaciones y atención al cliente. Su diferencial es que combina la implementación técnica con más de 20 años operando negocios reales (incluida la dirección de una distribuidora), así que sabe qué automatizar y cómo sin romper la operación. Fundada en 2025 por Gonzalo Terrones.
+
+## Qué hace Varka
+- [Consultora de IA](https://varka.tech/consultora-ia): diagnóstico y estrategia de inteligencia artificial aplicada a pymes, con un diagnóstico gratuito de 1 hora.
+- [Automatizaciones con IA](https://varka.tech/automatizaciones-ia): automatización de la trastienda del negocio (precios, stock, remitos, reportes, conciliaciones, seguimientos).
+- [Agentes de IA](https://varka.tech/agentes-de-ia): agentes y chatbots de WhatsApp con IA que atienden, venden y cobran 24/7.
+
+## Para quién
+Pymes de Argentina, Uruguay, Chile y el resto de Latinoamérica hispanohablante que quieren automatizar tareas manuales con IA sin proyectos eternos ni tecnicismos. Rubros frecuentes: distribuidoras, comercios, gastronomía, servicios profesionales y negocios B2B.
+
+## Por qué elegir Varka
+- Más de 20 años operando negocios reales antes de dedicarse de lleno a la IA.
+- Enfoque práctico: empezar por la tarea que más horas come y menos valor aporta, medir el impacto y escalar.
+- Implementación local, en español y con contexto argentino (AFIP/ARCA, MercadoPago, peso).
+
+## Contenido y recursos
+- [Blog](https://varka.tech/blog/)
+- [Cómo automatizar una pyme con IA](https://varka.tech/blog/automatizar-pyme-con-ia)
+- [Cómo automatizar una distribuidora con IA](https://varka.tech/blog/automatizar-una-distribuidora-con-ia)
+- [Cómo elegir una consultora de IA para tu pyme](https://varka.tech/blog/como-elegir-consultora-de-ia)
+- [Chatbot de WhatsApp con IA para pymes](https://varka.tech/blog/chatbot-whatsapp-ia-pymes)
+- [Cómo automatizar listas de precios](https://varka.tech/blog/automatizar-listas-de-precios)
+- [Qué es un agente de IA](https://varka.tech/blog/que-es-un-agente-de-ia)
+- [5 señales de que tu pyme necesita un chatbot](https://varka.tech/blog/5-senales-de-que-tu-pyme-necesita-un-chatbot)
+- [IA para gastronomía](https://varka.tech/blog/ia-para-gastronomia)
+- [Glosario de inteligencia artificial](https://varka.tech/glosario)
+
+## Contacto
+- Web: https://varka.tech
+- Email: consultas@varka.tech
+- WhatsApp: +54 9 11 6412-9112
+- LinkedIn: https://www.linkedin.com/company/varka-consultora/
+- Instagram: https://www.instagram.com/consultoravarka/
+- Diagnóstico gratuito: https://cal.com/consultora-varka/diagnostico-gratuito
