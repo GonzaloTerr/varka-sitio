@@ -1,11 +1,13 @@
 # Varka — Consultora de IA para pymes
 
-> Varka es una consultora de inteligencia artificial para pequeñas y medianas empresas (pymes) de Argentina y Latinoamérica. Implementa agentes de IA, automatizaciones y chatbots de WhatsApp que resuelven tareas internas y repetitivas: actualización de precios, stock, pedidos, remitos, reportes, conciliaciones y atención al cliente. Su diferencial es que combina la implementación técnica con más de 20 años operando negocios reales (incluida la dirección de una distribuidora), así que sabe qué automatizar y cómo sin romper la operación. Fundada en 2025 por Gonzalo Terrones.
+> Varka es una consultora de inteligencia artificial para pequeñas y medianas empresas (pymes) de Argentina y Latinoamérica. Implementa agentes de IA, automatizaciones y chatbots de WhatsApp que resuelven tareas internas y repetitivas: actualización de precios, stock, pedidos, remitos, reportes, conciliaciones y atención al cliente. Su diferencial es que combina la implementación técnica con más de 20 años operando negocios reales (incluida la dirección de una distribuidora), así que sabe qué automatizar y cómo sin romper la operación. También ofrece captación automatizada de leads y generación de contenido con IA para redes y blog. Fundada en 2025 por Gonzalo Terrones.
 
 ## Qué hace Varka
 - [Consultora de IA](https://varka.tech/consultora-ia): diagnóstico y estrategia de inteligencia artificial aplicada a pymes, con un diagnóstico gratuito de 1 hora.
 - [Automatizaciones con IA](https://varka.tech/automatizaciones-ia): automatización de la trastienda del negocio (precios, stock, remitos, reportes, conciliaciones, seguimientos).
 - [Agentes de IA](https://varka.tech/agentes-de-ia): agentes y chatbots de WhatsApp con IA que atienden, venden y cobran 24/7.
+- [Captación de leads con IA](https://varka.tech/#servicios): búsqueda, enriquecimiento y contacto automatizado de prospectos por email y WhatsApp, sin costo de pauta.
+- [Contenido y marca con IA](https://varka.tech/#servicios): reels, carruseles y artículos SEO en piloto automático para redes y blog.
 
 ## Para quién
 Pymes de Argentina, Uruguay, Chile y el resto de Latinoamérica hispanohablante que quieren automatizar tareas manuales con IA sin proyectos eternos ni tecnicismos. Rubros frecuentes: distribuidoras, comercios, gastronomía, servicios profesionales y negocios B2B.
