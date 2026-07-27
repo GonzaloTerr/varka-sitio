@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>Auditoría de ciberseguridad y pentesting para pymes | Varka</title>
+<meta name="description" content="Auditoría de seguridad y pentesting para pymes y startups. Detectamos vulnerabilidades antes que un atacante: OWASP Top 10, informe claro y plan de remediación. Diagnóstico gratuito.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://varka.tech/ciberseguridad-ia">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://varka.tech/ciberseguridad-ia">
+<meta property="og:title" content="Auditoría de ciberseguridad y pentesting para pymes | Varka">
+<meta property="og:description" content="Encontramos las vulnerabilidades de tu sistema antes que un atacante y te dejamos un plan claro para cerrarlas.">
+<meta property="og:image" content="https://varka.tech/og-image.jpg">
+<meta property="og:locale" content="es_AR">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "¿Qué es una auditoría de seguridad o pentest?", "acceptedAnswer": {"@type": "Answer", "text": "Es un análisis controlado y autorizado de tu sistema, en el que reproducimos las técnicas que usaría un atacante real para encontrar vulnerabilidades antes que ellos. El resultado es un informe con cada falla, su impacto y cómo solucionarla."}},
+    {"@type": "Question", "name": "¿Es legal? ¿Toca datos reales de mis clientes?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, es totalmente legal: trabajamos siempre con una autorización de pruebas firmada que define el alcance exacto. Nunca extraemos datos reales de tus usuarios ni dejamos el sistema en peor estado del que estaba."}},
+    {"@type": "Question", "name": "¿Para qué tipo de empresa sirve?", "acceptedAnswer": {"@type": "Answer", "text": "Para pymes, startups y proyectos con una app web, un e-commerce, una API o un sistema que maneje datos de clientes o pagos. Si manejás información sensible o cobros online, una auditoría te ahorra un problema mucho más caro."}},
+    {"@type": "Question", "name": "¿Qué me llevo al final?", "acceptedAnswer": {"@type": "Answer", "text": "Un informe ejecutivo para la toma de decisiones y un informe técnico con cada hallazgo ordenado por severidad, evidencia y una guía concreta de remediación priorizada. Opcionalmente, arreglamos las fallas y hacemos un re-test."}}
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/widget.css">
+<!-- Umami Analytics -->
+<script defer src="https://analytics.varka.tech/script.js" data-website-id="d49f6204-1f1d-4ae0-956e-c7d5e2d0883d"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="nav-logo" href="/">
+    <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <polygon points="14,2 24.5,8 24.5,20 14,26 3.5,20 3.5,8" stroke="#5DCAA5" stroke-width="1.75" fill="rgba(29,158,117,.08)" stroke-linejoin="round"/>
+      <circle cx="14" cy="14" r="3" fill="#1D9E75"/>
+    </svg>
+    Varka
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="/consultora-ia">Consultora de IA</a></li>
+    <li><a href="/automatizaciones-ia">Automatizaciones</a></li>
+    <li><a href="/agentes-de-ia">Agentes de IA</a></li>
+    <li><a href="/ciberseguridad-ia">Ciberseguridad</a></li>
+    <li><a href="/blog/">Blog</a></li>
+  </ul>
+  <a class="nav-cta" href="https://cal.com/consultora-varka/diagnostico-gratuito" target="_blank" rel="noopener">Diagnóstico gratis</a>
+  <button class="hamburger" aria-label="Abrir menú" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+  <ul>
+    <li><a href="/consultora-ia">Consultora de IA</a></li>
+    <li><a href="/automatizaciones-ia">Automatizaciones con IA</a></li>
+    <li><a href="/agentes-de-ia">Agentes de IA</a></li>
+    <li><a href="/ciberseguridad-ia">Ciberseguridad</a></li>
+    <li><a href="/blog/">Blog</a></li>
+  </ul>
+  <a class="mobile-cta" href="https://cal.com/consultora-varka/diagnostico-gratuito" target="_blank" rel="noopener">Diagnóstico gratuito</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner single">
+    <div class="hero-content">
+      <div class="hero-tag"><span></span>Auditoría de seguridad y pentesting</div>
+      <h1>Encontramos las fallas de tu sistema <em>antes que un atacante</em></h1>
+      <p>Auditamos tu app, tu e-commerce o tu API con las mismas técnicas que usaría un atacante real —siempre de forma autorizada y controlada— y te dejamos un informe claro con qué arreglar y en qué orden.</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="https://cal.com/consultora-varka/diagnostico-gratuito" target="_blank" rel="noopener">
+          Diagnóstico gratuito
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn-secondary" href="/">Volver al inicio</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ HACEMOS -->
+<section class="problem">
+  <div class="section-inner">
+    <div class="section-tag">Qué hacemos</div>
+    <h2>Una auditoría de seguridad, en lenguaje claro</h2>
+    <p>No te entregamos un PDF lleno de tecnicismos que nadie lee. Buscamos las fallas que de verdad ponen en riesgo tu negocio, te las mostramos y te ayudamos a cerrarlas.</p>
+    <div class="problem-grid">
+      <div class="problem-card fade-up">
+        <div class="problem-icon">🔍</div>
+        <h3>Reconocimiento</h3>
+        <p>Mapeamos toda la superficie expuesta de tu sistema: dominios, servicios, APIs y puntos de entrada que un atacante vería.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <div class="problem-icon">🛡️</div>
+        <h3>Búsqueda de vulnerabilidades</h3>
+        <p>Revisamos el OWASP Top 10 y la lógica de negocio: control de acceso, autenticación, inyecciones y bypass de pagos.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <div class="problem-icon">🧪</div>
+        <h3>Validación controlada</h3>
+        <p>Confirmamos cada falla con una prueba mínima, sin extraer datos reales ni afectar el funcionamiento de tu sistema.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <div class="problem-icon">📄</div>
+        <h3>Informe y remediación</h3>
+        <p>Te entregamos un informe priorizado por severidad y, si querés, arreglamos las fallas y hacemos un re-test.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARA QUIÉN -->
+<section class="services arena">
+  <div class="section-inner">
+    <div class="section-tag">Para quién</div>
+    <h2>Si manejás datos o cobros online, esto te importa</h2>
+    <p>Una vulnerabilidad hoy es mucho más barata de arreglar que una filtración mañana. Trabajamos con equipos que no tienen un área de seguridad propia.</p>
+    <div class="problem-grid">
+      <div class="problem-card fade-up">
+        <h3>Startups y SaaS</h3>
+        <p>Antes de salir a producción o de una ronda, validá que tu producto no tenga fallas críticas que asusten a inversores o clientes.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <h3>E-commerce y pagos</h3>
+        <p>Si cobrás online, revisamos que nadie pueda evadir el pago, manipular precios o acceder a datos de otros clientes.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <h3>Apps con datos sensibles</h3>
+        <p>Salud, finanzas o cualquier plataforma con información privada: verificamos que un usuario no pueda ver los datos de otro.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <h3>Empresas que integran IA</h3>
+        <p>Chatbots, agentes y automatizaciones también se pueden atacar. Revisamos fugas de datos, prompt injection y accesos indebidos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO TRABAJAMOS -->
+<section class="how">
+  <div class="section-inner">
+    <h2>Del acuerdo al informe, con reglas claras</h2>
+    <div class="how-steps">
+      <div class="how-step"><div class="step-num">01</div><div class="step-content"><h3>Alcance y autorización</h3><p>Definimos qué sistemas entran, qué no, y firmamos una autorización de pruebas. Nada se toca sin permiso por escrito.</p></div></div>
+      <div class="how-step"><div class="step-num">02</div><div class="step-content"><h3>Auditoría</h3><p>Ejecutamos el pentest: reconocimiento, búsqueda de vulnerabilidades y validación controlada de cada hallazgo.</p></div></div>
+      <div class="how-step"><div class="step-num">03</div><div class="step-content"><h3>Informe y walkthrough</h3><p>Te entregamos el informe ejecutivo y técnico, y lo repasamos juntos para que quede claro qué priorizar.</p></div></div>
+      <div class="how-step"><div class="step-num">04</div><div class="step-content"><h3>Remediación y re-test</h3><p>Opcional: arreglamos las fallas críticas, y volvemos a testear para confirmar que quedaron cerradas.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq blanco" id="faq">
+  <div class="section-inner">
+    <h2>Preguntas frecuentes sobre auditorías de seguridad</h2>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q">¿Qué es una auditoría de seguridad o pentest?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><p>Es un análisis controlado y autorizado de tu sistema, en el que reproducimos las técnicas que usaría un atacante real para encontrar vulnerabilidades antes que ellos. El resultado es un informe con cada falla, su impacto y cómo solucionarla.</p></div></div>
+      <div class="faq-item"><button class="faq-q">¿Es legal? ¿Toca datos reales de mis clientes?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><p>Sí, es totalmente legal: trabajamos siempre con una autorización de pruebas firmada que define el alcance exacto. Nunca extraemos datos reales de tus usuarios ni dejamos el sistema en peor estado del que estaba.</p></div></div>
+      <div class="faq-item"><button class="faq-q">¿Para qué tipo de empresa sirve?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><p>Para pymes, startups y proyectos con una app web, un e-commerce, una API o un sistema que maneje datos de clientes o pagos. Si manejás información sensible o cobros online, una auditoría te ahorra un problema mucho más caro.</p></div></div>
+      <div class="faq-item"><button class="faq-q">¿Qué me llevo al final?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><p>Un informe ejecutivo para la toma de decisiones y un informe técnico con cada hallazgo ordenado por severidad, evidencia y una guía concreta de remediación priorizada. Opcionalmente, arreglamos las fallas y hacemos un re-test.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>¿Tu sistema resistiría un ataque real?</h2>
+  <p>Agendá un diagnóstico gratuito. Revisamos tu caso y te decimos si una auditoría de seguridad tiene sentido para tu negocio.</p>
+  <div class="cta-btns">
+    <a class="btn-dark" href="https://cal.com/consultora-varka/diagnostico-gratuito" target="_blank" rel="noopener">Agendá tu diagnóstico</a>
+    <a class="btn-outline" href="https://wa.me/5491125653768" target="_blank" rel="noopener">Escribinos por WhatsApp</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <a class="footer-logo" href="/">
+        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" aria-hidden="true"><polygon points="14,2 24.5,8 24.5,20 14,26 3.5,20 3.5,8" stroke="#5DCAA5" stroke-width="1.75" fill="rgba(29,158,117,.08)" stroke-linejoin="round"/><circle cx="14" cy="14" r="3" fill="#1D9E75"/></svg>
+        Varka
+      </a>
+      <p class="footer-tagline">Consultora de IA para pymes que quieren crecer sin complicarse.</p>
+      <a class="footer-email" href="https://mail.google.com/mail/?view=cm&to=consultas@varka.tech&su=Consulta desde varka.tech" target="_blank" rel="noopener">consultas@varka.tech</a><br>
+      <a class="footer-email" href="https://wa.me/5491125653768" target="_blank" rel="noopener">+54 9 11 2565-3768</a>
+    </div>
+    <div class="footer-col">
+      <h4>Soluciones</h4>
+      <ul>
+        <li><a href="/consultora-ia">Consultora de IA</a></li>
+        <li><a href="/automatizaciones-ia">Automatizaciones con IA</a></li>
+        <li><a href="/agentes-de-ia">Agentes de IA</a></li>
+        <li><a href="/ciberseguridad-ia">Ciberseguridad</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="/#proceso">Cómo trabajamos</a></li>
+        <li><a href="/glosario">Glosario</a></li>
+        <li><a href="/#faq">Preguntas frecuentes</a></li>
+        <li><a href="https://cal.com/consultora-varka/diagnostico-gratuito" target="_blank" rel="noopener">Agendar</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Seguinos</h4>
+      <ul>
+        <li><a href="https://www.linkedin.com/company/varka-consultora/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/consultoravarka/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://wa.me/5491125653768" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Varka. Todos los derechos reservados.</p>
+    <div class="footer-links"><a href="/">Inicio</a></div>
+  </div>
+</footer>
+
+<script>
+  // Nav scrolled
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
+  // Hamburger
+  const hb = document.getElementById('hamburger'), mn = document.getElementById('mobile-nav');
+  hb.addEventListener('click', () => { hb.classList.toggle('open'); mn.classList.toggle('open'); });
+  mn.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { hb.classList.remove('open'); mn.classList.remove('open'); }));
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => q.addEventListener('click', () => { q.parentElement.classList.toggle('open'); }));
+</script>
+<script src="/widget.js" defer></script>
+</body>
+</html>

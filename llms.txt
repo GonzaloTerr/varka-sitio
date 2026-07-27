@@ -8,6 +8,7 @@
 - [Agentes de IA](https://varka.tech/agentes-de-ia): agentes y chatbots de WhatsApp con IA que atienden, venden y cobran 24/7.
 - [Captación de leads con IA](https://varka.tech/#servicios): búsqueda, enriquecimiento y contacto automatizado de prospectos por email y WhatsApp, sin costo de pauta.
 - [Contenido y marca con IA](https://varka.tech/#servicios): reels, carruseles y artículos SEO en piloto automático para redes y blog.
+- [Auditoría de ciberseguridad y pentesting](https://varka.tech/ciberseguridad-ia): auditorías de seguridad autorizadas (pentest) para pymes y startups; detección de vulnerabilidades (OWASP Top 10, lógica de negocio), informe claro y plan de remediación priorizado.
 
 ## Para quién
 Pymes de Argentina, Uruguay, Chile y el resto de Latinoamérica hispanohablante que quieren automatizar tareas manuales con IA sin proyectos eternos ni tecnicismos. Rubros frecuentes: distribuidoras, comercios, gastronomía, servicios profesionales y negocios B2B.
@@ -19,6 +20,7 @@ Pymes de Argentina, Uruguay, Chile y el resto de Latinoamérica hispanohablante 
 
 ## Contenido y recursos
 - [Blog](https://varka.tech/blog/)
+- [Por qué fracasan los proyectos de IA en las empresas](https://varka.tech/blog/por-que-fracasan-los-proyectos-de-ia): la adopción se traba en el último paso, no en la tecnología; qué le toca resolver al líder del equipo.
 - [Cómo automatizar una pyme con IA](https://varka.tech/blog/automatizar-pyme-con-ia)
 - [Cómo automatizar una distribuidora con IA](https://varka.tech/blog/automatizar-una-distribuidora-con-ia)
 - [Cómo elegir una consultora de IA para tu pyme](https://varka.tech/blog/como-elegir-consultora-de-ia)

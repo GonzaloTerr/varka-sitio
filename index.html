@@ -26,7 +26,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": ["Organization", "ProfessionalService"],
   "name": "Varka",
   "url": "https://varka.tech",
   "email": "consultas@varka.tech",
@@ -34,6 +34,19 @@
   "logo": "https://varka.tech/og-image.jpg",
   "image": "https://varka.tech/og-image.jpg",
   "description": "Consultoría de inteligencia artificial para pymes. Implementamos chatbots, automatizaciones y estrategias de IA para pequeñas y medianas empresas.",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Buenos Aires",
+    "addressRegion": "CABA",
+    "addressCountry": "AR"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  },
   "foundingDate": "2025",
   "founder": {
     "@type": "Person",
@@ -684,6 +697,13 @@
         <p>Analizamos tu negocio e identificamos exactamente dónde la IA genera más impacto. Te entregamos un plan claro con prioridades y costos estimados.</p>
         <div class="service-price">desde $120 <span>USD / sesión</span></div>
       </div>
+      <div class="service-card fade-up">
+        <div class="service-num">06</div>
+        <div class="service-badge">Seguridad</div>
+        <h3>Auditoría de ciberseguridad</h3>
+        <p>Encontramos las vulnerabilidades de tu app, e-commerce o API antes que un atacante. Pentest autorizado, informe claro y plan de remediación priorizado. <a href="/ciberseguridad-ia" style="color:var(--verde-marca);text-decoration:underline;">Ver más</a>.</p>
+        <div class="service-price">A medida</div>
+      </div>
     </div>
   </div>
 </section>
@@ -959,6 +979,7 @@
         <li><a href="/consultora-ia">Consultora de IA</a></li>
         <li><a href="/automatizaciones-ia">Automatizaciones con IA</a></li>
         <li><a href="/agentes-de-ia">Agentes de IA</a></li>
+        <li><a href="/ciberseguridad-ia">Ciberseguridad</a></li>
         <li><a href="#planes">Precios</a></li>
       </ul>
     </div>
