@@ -472,6 +472,17 @@
     .services-showcase { display: none; }
     .footer-top { grid-template-columns: 1fr 1fr; }
   }
+  @media (max-width: 1400px) and (min-width: 1151px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { gap: 1.5rem; }
+    .nav-links a { font-size: .82rem; }
+  }
+  @media (max-width: 1150px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links, .nav-cta { display: none; }
+    .hamburger { display: flex; }
+    .mobile-nav { display: block; }
+  }
   @media (max-width: 768px) {
     nav { padding: 1rem 1.5rem; }
     .nav-links, .nav-cta { display: none; }
@@ -506,12 +517,13 @@
     Varka
   </a>
   <ul class="nav-links" role="list">
-    <li><a href="#servicios">Servicios</a></li>
-    <li><a href="#proceso">Proceso</a></li>
+    <li><a href="/consultora-ia">Consultora de IA</a></li>
+    <li><a href="/automatizaciones-ia">Automatizaciones</a></li>
+    <li><a href="/agentes-de-ia">Agentes de IA</a></li>
+    <li><a href="/ciberseguridad-ia">Ciberseguridad</a></li>
+    <li><a href="/posicionamiento-ia">GEO</a></li>
     <li><a href="#planes">Precios</a></li>
     <li><a href="/blog/">Blog</a></li>
-    <li><a href="/glosario">Glosario</a></li>
-    <li><a href="#faq">FAQ</a></li>
     <li><a href="https://app.varka.tech" target="_blank" rel="noopener">Herramienta IA</a></li>
   </ul>
   <a class="nav-cta" href="https://cal.com/consultora-varka/diagnostico-gratuito" target="_blank" rel="noopener">Diagnóstico gratis</a>
@@ -522,12 +534,13 @@
 
 <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
   <ul>
-    <li><a href="#servicios">Servicios</a></li>
-    <li><a href="#proceso">Proceso</a></li>
+    <li><a href="/consultora-ia">Consultora de IA</a></li>
+    <li><a href="/automatizaciones-ia">Automatizaciones con IA</a></li>
+    <li><a href="/agentes-de-ia">Agentes de IA</a></li>
+    <li><a href="/ciberseguridad-ia">Ciberseguridad</a></li>
+    <li><a href="/posicionamiento-ia">GEO — Posicionamiento en IA</a></li>
     <li><a href="#planes">Precios</a></li>
     <li><a href="/blog/">Blog</a></li>
-    <li><a href="/glosario">Glosario</a></li>
-    <li><a href="#faq">FAQ</a></li>
     <li><a href="https://app.varka.tech" target="_blank" rel="noopener">Herramienta IA</a></li>
   </ul>
   <a class="mobile-cta" href="https://cal.com/consultora-varka/diagnostico-gratuito" target="_blank" rel="noopener">Diagnóstico gratuito</a>
@@ -703,6 +716,13 @@
         <h3>Auditoría de ciberseguridad</h3>
         <p>Encontramos las vulnerabilidades de tu app, e-commerce o API antes que un atacante. Pentest autorizado, informe claro y plan de remediación priorizado. <a href="/ciberseguridad-ia" style="color:var(--verde-marca);text-decoration:underline;">Ver más</a>.</p>
         <div class="service-price">A medida</div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-num">07</div>
+        <div class="service-badge">Visibilidad</div>
+        <h3>Posicionamiento en IA (GEO)</h3>
+        <p>Tus clientes ya no buscan solo en Google: le preguntan a ChatGPT, Perplexity o Gemini. Trabajamos para que esa respuesta te nombre y te cite, con medición fechada de antes y después. <a href="/posicionamiento-ia" style="color:var(--verde-marca);text-decoration:underline;">Ver más</a>.</p>
+        <div class="service-price">Desde US$450</div>
       </div>
     </div>
   </div>
@@ -980,6 +1000,7 @@
         <li><a href="/automatizaciones-ia">Automatizaciones con IA</a></li>
         <li><a href="/agentes-de-ia">Agentes de IA</a></li>
         <li><a href="/ciberseguridad-ia">Ciberseguridad</a></li>
+        <li><a href="/posicionamiento-ia">Posicionamiento en IA (GEO)</a></li>
         <li><a href="#planes">Precios</a></li>
       </ul>
     </div>
@@ -1003,7 +1024,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 Varka. Todos los derechos reservados.</p>
+    <p>© 2026 Varka. Todos los derechos reservados.</p>
     <div class="footer-links">
       <a href="#">Términos y condiciones</a>
       <a href="#">Privacidad</a>

@@ -7,3 +7,5 @@ node_modules/
 # OS
 .DS_Store
 Thumbs.db
+# Originales en alta de las fotos del blog (no se publican)
+*.ORIGINAL.jpg

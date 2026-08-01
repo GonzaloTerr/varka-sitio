@@ -9,6 +9,7 @@
 - [Captación de leads con IA](https://varka.tech/#servicios): búsqueda, enriquecimiento y contacto automatizado de prospectos por email y WhatsApp, sin costo de pauta.
 - [Contenido y marca con IA](https://varka.tech/#servicios): reels, carruseles y artículos SEO en piloto automático para redes y blog.
 - [Auditoría de ciberseguridad y pentesting](https://varka.tech/ciberseguridad-ia): auditorías de seguridad autorizadas (pentest) para pymes y startups; detección de vulnerabilidades (OWASP Top 10, lógica de negocio), informe claro y plan de remediación priorizado.
+- [Posicionamiento en IA — GEO](https://varka.tech/posicionamiento-ia): Generative Engine Optimization, el trabajo de lograr que ChatGPT, Perplexity y Gemini nombren y citen a una empresa cuando alguien pregunta por su rubro. Incluye medición inicial con un corpus de 25 consultas corridas en los tres motores, datos estructurados y llms.txt, consenso de entidad en directorios, contenido citable y re-test mensual fechado. Varka mide con series propias fechadas: el primer movimiento aparece cerca de la cuarta semana y el orden es siempre el mismo, primero el reconocimiento de marca y después la recomendación por categoría.
 
 ## Para quién
 Pymes de Argentina, Uruguay, Chile y el resto de Latinoamérica hispanohablante que quieren automatizar tareas manuales con IA sin proyectos eternos ni tecnicismos. Rubros frecuentes: distribuidoras, comercios, gastronomía, servicios profesionales y negocios B2B.

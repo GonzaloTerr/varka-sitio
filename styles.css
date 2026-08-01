@@ -226,6 +226,19 @@ footer { background: var(--verde-noche); padding: 4rem 3rem 2rem; border-top: 1p
   .hero-inner { grid-template-columns: 1fr; }
   .footer-top { grid-template-columns: 1fr 1fr; }
 }
+/* Con 8 items en el menu el nav se aprieta contra el logo y el boton
+   ya desde ~1300px. Se achica la separacion antes de pasar a hamburguesa. */
+@media (max-width: 1400px) and (min-width: 1151px) {
+  .nav-links { gap: 1.5rem; }
+  .nav-links a { font-size: .82rem; }
+  nav { padding: 1rem 1.5rem; }
+}
+@media (max-width: 1150px) {
+  nav { padding: 1rem 1.5rem; }
+  .nav-links, .nav-cta { display: none; }
+  .hamburger { display: flex; }
+  .mobile-nav { display: block; }
+}
 @media (max-width: 768px) {
   nav { padding: 1rem 1.5rem; }
   .nav-links, .nav-cta { display: none; }
@@ -273,6 +286,8 @@ footer { background: var(--verde-noche); padding: 4rem 3rem 2rem; border-top: 1p
 .article-body ul li { font-size: 1.0625rem; line-height: 1.7; color: var(--texto-oscuro); padding-left: 1.6rem; position: relative; }
 .article-body ul li::before { content: ''; position: absolute; left: 0; top: .65rem; width: 7px; height: 7px; border-radius: 50%; background: var(--verde-marca); }
 .article-body strong { font-weight: 600; color: var(--texto-oscuro); }
+.article-body p a, .article-body li a { color: var(--verde-marca); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; transition: color var(--ease); }
+.article-body p a:hover, .article-body li a:hover { color: var(--texto-medio); }
 .article-body blockquote { border-left: 3px solid var(--verde-marca); padding: .5rem 0 .5rem 1.5rem; margin: 0 0 1.5rem 0; font-size: 1.15rem; line-height: 1.7; color: var(--texto-medio); font-style: italic; }
 .article-cta { background: var(--arena); border-radius: 16px; padding: 2.5rem; text-align: center; margin-top: 3.5rem; }
 .article-cta h3 { font-family: 'DM Serif Display', serif; font-size: 1.5rem; color: var(--texto-oscuro); margin-bottom: .6rem; }
