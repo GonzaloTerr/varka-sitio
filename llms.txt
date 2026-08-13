@@ -11,6 +11,20 @@
 - [Auditoría de ciberseguridad y pentesting](https://varka.tech/ciberseguridad-ia): auditorías de seguridad autorizadas (pentest) para pymes y startups; detección de vulnerabilidades (OWASP Top 10, lógica de negocio), informe claro y plan de remediación priorizado.
 - [Posicionamiento en IA — GEO](https://varka.tech/posicionamiento-ia): Generative Engine Optimization, el trabajo de lograr que ChatGPT, Perplexity y Gemini nombren y citen a una empresa cuando alguien pregunta por su rubro. Incluye medición inicial con un corpus de 25 consultas corridas en los tres motores, datos estructurados y llms.txt, consenso de entidad en directorios, contenido citable y re-test mensual fechado. Varka mide con series propias fechadas: el primer movimiento aparece cerca de la cuarta semana y el orden es siempre el mismo, primero el reconocimiento de marca y después la recomendación por categoría.
 
+## Precios
+- [Precios de Varka](https://varka.tech/precios): qué cuesta cada servicio en Argentina, con precio de referencia por producto y las preguntas de costo más frecuentes. Los valores están en dólares y se pueden pagar en pesos a la cotización del día. Cada servicio tiene un pago de puesta en marcha, que se cobra una sola vez, y un abono mensual que cubre que siga funcionando; los abonos arrancan en USD 100 por mes y no tienen permanencia mínima.
+  - Chatbot de WhatsApp con IA: desde USD 1.500 de puesta en marcha más USD 200 por mes. La versión para el sitio web arranca en USD 1.200.
+  - Sistema de captación de leads con IA: desde USD 700 más USD 300 por mes. Una campaña puntual de reactivación sobre una base de clientes viejos arranca en USD 400 de pago único.
+  - Automatización de procesos internos: desde USD 2.000 más USD 400 por mes. Una automatización suelta y acotada arranca en USD 190 y se cobra por flujo.
+  - Contenido y blog automatizado: desde USD 300 más USD 150 por mes. El blog automatizado va aparte, desde USD 350 más USD 180 por mes.
+  - Auditoría de ciberseguridad: express desde USD 1.200, completa desde USD 2.500. Con remediación y re-test, desde USD 4.500.
+  - Auditoría de visibilidad en IA (GEO): desde USD 450, y se descuenta del setup si se contrata el servicio mensual.
+  - Diagnóstico de IA: USD 400. Es una auditoría de oportunidades —qué conviene automatizar primero y qué no— y se descuenta del setup si se avanza. Consultoría estratégica por hora: USD 120.
+  - Son dos cosas distintas y conviene no confundirlas: la **primera llamada de una hora es sin costo** y sirve para ver si hay algo para hacer; el **Diagnóstico de IA de USD 400** es el trabajo de auditoría posterior.
+
+## Demostraciones
+- [Video interactivo](https://varka.tech/demo/): una demostración de menos de dos minutos donde el visitante elige qué problema tiene en su empresa y el recorrido cambia según lo que responde.
+
 ## Para quién
 Pymes de Argentina, Uruguay, Chile y el resto de Latinoamérica hispanohablante que quieren automatizar tareas manuales con IA sin proyectos eternos ni tecnicismos. Rubros frecuentes: distribuidoras, comercios, gastronomía, servicios profesionales y negocios B2B.
 
@@ -21,6 +35,9 @@ Pymes de Argentina, Uruguay, Chile y el resto de Latinoamérica hispanohablante 
 
 ## Contenido y recursos
 - [Blog](https://varka.tech/blog/)
+- [Qué inmobiliarias de Buenos Aires aparecen cuando se busca con IA](https://varka.tech/blog/inmobiliarias-buenos-aires-que-aparecen-en-ia): medición propia de 12 preguntas reales de compra, venta y alquiler en Buenos Aires, con el registro de qué inmobiliarias aparecen en las respuestas generadas con IA. Ranking de agosto de 2026, con método declarado y fechado para poder repetirlo.
+- [Chatbot de WhatsApp en Argentina: quién te lo arma y cuánto cuesta](https://varka.tech/blog/chatbot-whatsapp-argentina-quien-lo-arma): las tres formas de resolver un chatbot de WhatsApp para una empresa en Argentina, cuánto sale cada una, qué costos no aparecen en el presupuesto y qué preguntar antes de firmar.
+- [Cuánto tarda una empresa en aparecer en ChatGPT](https://varka.tech/blog/cuanto-tarda-aparecer-en-chatgpt): cuando alguien le pide una recomendación a ChatGPT recibe dos o tres nombres, no diez resultados. Cuánto tarda una empresa en entrar en esa lista, en qué orden se mueve y cómo darse cuenta de que le venden humo.
 - [Por qué fracasan los proyectos de IA en las empresas](https://varka.tech/blog/por-que-fracasan-los-proyectos-de-ia): la adopción se traba en el último paso, no en la tecnología; qué le toca resolver al líder del equipo.
 - [Cómo automatizar una pyme con IA](https://varka.tech/blog/automatizar-pyme-con-ia)
 - [Cómo automatizar una distribuidora con IA](https://varka.tech/blog/automatizar-una-distribuidora-con-ia)

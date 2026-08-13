@@ -202,6 +202,22 @@ const mostrarOpciones = () => {
     panel.appendChild(b);
   });
 
+  // En los cierres, la vuelta al sitio. El que llega por un link de outreach
+  // (?e=agencia) entra directo acá y sus únicas salidas son los dos WhatsApp:
+  // si le interesó y quiere ver precios o servicios, no tiene por dónde.
+  // Lleva la clase `.opcion` a propósito, así `ocultarOpciones()` lo limpia
+  // junto con los botones y no queda colgado si el visitante vuelve a empezar.
+  if (esSalida) {
+    const a = document.createElement("a");
+    a.className = "opcion sitio";
+    a.href = "/";
+    a.textContent = "Ver todo lo que hacemos →";
+    a.addEventListener("click", () =>
+      evento("video_al_sitio", { camino: camino.join(" > ") })
+    );
+    panel.appendChild(a);
+  }
+
   opciones.classList.add("visible");
 };
 
