@@ -13,6 +13,10 @@
 .ai-bubble:hover { background: #16835f; transform: scale(1.08); box-shadow: 0 6px 32px rgba(29,158,117,.55); }
 .ai-bubble.open { background: var(--texto-oscuro); box-shadow: 0 4px 20px rgba(0,0,0,.3); }
 .ai-bubble-icon, .ai-bubble-close { position: absolute; transition: opacity .25s, transform .25s; }
+/* La cabeza del robot, sin sombrero. El dibujo es más ancho que alto
+   (viewBox 148x120), así que se fija el ancho y el alto sale solo: forzar
+   los dos lo deforma. 46px sobre una burbuja de 56 deja el aire justo. */
+.ai-bubble-icon { width: 46px; height: auto; pointer-events: none; }
 .ai-bubble-close { opacity: 0; transform: scale(.5) rotate(-90deg); }
 .ai-bubble.open .ai-bubble-icon { opacity: 0; transform: scale(.5); }
 .ai-bubble.open .ai-bubble-close { opacity: 1; transform: scale(1) rotate(0); }

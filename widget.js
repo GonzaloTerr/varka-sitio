@@ -13,9 +13,7 @@
     ¿Automatizás algo en tu negocio? Puedo ayudarte a ver qué conviene 👋
   </div>
   <button class="ai-bubble" id="aiBubble" aria-label="Abrir chat con Varka AI" aria-expanded="false">
-    <svg class="ai-bubble-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
+    <img class="ai-bubble-icon" src="/img/robots/robot-cabeza-ajustado.svg" alt="" aria-hidden="true">
     <svg class="ai-bubble-close" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
       <path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round"/>
     </svg>
@@ -79,7 +77,7 @@ Todo se cobra como SETUP ÚNICO + ABONO MENSUAL de mantenimiento y mejoras, sin 
 4. CONTENIDO Y MARCA CON IA — desde $300 USD setup + $150/mes
    Reels, carruseles y artículos SEO en piloto automático. Plan Pro desde $450 + $300/mes; con avatar de IA desde $700 + $400/mes.
 
-5. ASESORÍA ESTRATÉGICA — desde $120 USD/sesión (punto de entrada ideal)
+5. ASESORÍA ESTRATÉGICA — $120 USD la hora suelta; $100 USD/h desde 10 horas (punto de entrada ideal)
    Análisis del negocio + plan concreto de IA con prioridades y costos estimados.
 
 6. AUDITORÍA DE CIBERSEGURIDAD — a medida

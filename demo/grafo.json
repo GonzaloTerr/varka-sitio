@@ -1,0 +1,66 @@
+{
+  "_comentario": "Copiado de varka-comercial/video-interactivo/GUION-ARBOL.md. Si cambia el arbol alla, se actualiza aca. Los textos de boton tienen max 20 caracteres a proposito: es el limite de los mensajes interactivos de WhatsApp, y respetarlo permite correr el mismo arbol dentro del chat sin reescribirlo. La 'pregunta' de cada nodo es la ultima frase que dice el robot en ese clip: queda escrita arriba de los botones para que no haya que acordarse de que pregunto. TIENE QUE SER LA MISMA FRASE QUE EL AUDIO: el subtitulo queda quemado en el ultimo frame del clip y se ve al lado.",
+  "inicio": "c0",
+  "entradas": { "agencia": "c1c", "empresa": "c1a", "interno": "c1b" },
+  "nodos": {
+    "c0": {
+      "clip": "c0-apertura.mp4",
+      "pregunta": "¿Qué estás necesitando?",
+      "opciones": [
+        { "txt": "Atención al cliente", "va": "c1a", "tag": "perfil:empresa_afuera" },
+        { "txt": "Quitar tareas a mano", "va": "c1b", "tag": "perfil:empresa_adentro" },
+        { "txt": "Hacete partner", "va": "c1c", "tag": "perfil:agencia" }
+      ]
+    },
+    "c1a": {
+      "clip": "c1a-afuera.mp4",
+      "pregunta": "Contame cómo te llegan las consultas hoy.",
+      "opciones": [
+        { "txt": "Por WhatsApp", "va": "c2a1", "tag": "dolor:wpp_saturado" },
+        { "txt": "Formulario o mail", "va": "c2a2", "tag": "dolor:form_lento" },
+        { "txt": "Los cargo a mano", "va": "c2a3", "tag": "dolor:carga_manual" }
+      ]
+    },
+    "c1b": {
+      "clip": "c1b-adentro.mp4",
+      "pregunta": "¿En qué actividad perdés más tiempo?",
+      "opciones": [
+        { "txt": "Cargar datos", "va": "c2b1", "tag": "dolor:doble_carga" },
+        { "txt": "Armar reportes", "va": "c2b2", "tag": "dolor:reportes" },
+        { "txt": "Los seguimientos", "va": "c2b3", "tag": "dolor:seguimientos" }
+      ]
+    },
+    "c1c": {
+      "clip": "c1c-agencia.mp4",
+      "pregunta": "¿Qué te frena hoy?",
+      "opciones": [
+        { "txt": "Falta quien lo haga", "va": "c2c1", "tag": "freno:sin_ejecucion" },
+        { "txt": "Quiero probar antes", "va": "c2c2", "tag": "freno:quiere_piloto" }
+      ]
+    },
+    "c2a1": { "clip": "c2a1-wpp.mp4", "pregunta": "Elegí cómo seguimos.", "opciones": "SALIDA" },
+    "c2a2": { "clip": "c2a2-formulario.mp4", "pregunta": "Elegí cómo seguimos.", "opciones": "SALIDA" },
+    "c2a3": { "clip": "c2a3-carga.mp4", "pregunta": "Elegí cómo seguimos.", "opciones": "SALIDA" },
+    "c2b1": { "clip": "c2b1-datos.mp4", "pregunta": "Elegí cómo seguimos.", "opciones": "SALIDA" },
+    "c2b2": { "clip": "c2b2-reportes.mp4", "pregunta": "Elegí cómo seguimos.", "opciones": "SALIDA" },
+    "c2b3": { "clip": "c2b3-seguimientos.mp4", "pregunta": "Elegí cómo seguimos.", "opciones": "SALIDA" },
+    "c2c1": { "clip": "c2c1-ejecucion.mp4", "pregunta": "Elegí cómo seguimos.", "opciones": "SALIDA" },
+    "c2c2": { "clip": "c2c2-probar.mp4", "pregunta": "Elegí cómo seguimos.", "opciones": "SALIDA" }
+  },
+  "salida": [
+    { "txt": "Chatear con una IA", "accion": "wa_sofia" },
+    { "txt": "Hablar con el equipo", "accion": "wa_gonzalo" },
+    { "txt": "Volver al inicio", "accion": "reset" }
+  ],
+  "mensajes": {
+    "dolor:wpp_saturado": "Vengo del video. Recibo consultas por WhatsApp y no doy abasto.",
+    "dolor:form_lento": "Vengo del video. Las consultas me entran por formulario y llego tarde.",
+    "dolor:carga_manual": "Vengo del video. Paso los contactos al CRM a mano.",
+    "dolor:doble_carga": "Vengo del video. Cargo los mismos datos en dos sistemas.",
+    "dolor:reportes": "Vengo del video. Los reportes los armo a mano.",
+    "dolor:seguimientos": "Vengo del video. Los seguimientos se me escapan.",
+    "freno:sin_ejecucion": "Vengo del video. Vendo servicios y necesito quién construya la parte técnica.",
+    "freno:quiere_piloto": "Vengo del video. Quiero probar con un cliente concreto.",
+    "_default": "Vengo del video de Varka."
+  }
+}

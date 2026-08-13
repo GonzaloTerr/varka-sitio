@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Varka — Video interactivo: elegí qué automatizar</title>
+<meta name="description" content="Un video que responde según lo que elijas. En menos de dos minutos vas a ver qué se puede automatizar en tu empresa.">
+<link rel="canonical" href="https://varka.tech/demo/">
+
+<!-- Preview al compartir. Estas URLs se mandan por LinkedIn y WhatsApp en el outreach,
+     así que la tarjeta es lo primero que ve el prospecto. -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://varka.tech/demo/">
+<meta property="og:title" content="Varka — Video interactivo: elegí qué automatizar">
+<meta property="og:description" content="Un video que responde según lo que elijas. En menos de dos minutos vas a ver qué se puede automatizar en tu empresa.">
+<meta property="og:image" content="https://varka.tech/demo/portada.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/favicon-32x32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<!-- Umami. Es el MISMO script y el mismo id que el resto del sitio, a proposito:
+     asi el recorrido del video queda en el mismo panel que las visitas.
+     Sin esto el player no mide NADA: player.js emite video_start, video_choice,
+     video_complete, video_exit y video_error contra window.umami, y si el script
+     no esta cargado esos eventos se pierden en silencio (el track va dentro de un
+     try/catch para que la analitica nunca corte la reproduccion).
+     Es lo que sostiene la decision de dejar WEBHOOK_N8N vacio: la estadistica del
+     camino la da Umami. Sin el script no la da nadie. -->
+<script defer src="https://analytics.varka.tech/script.js" data-website-id="d49f6204-1f1d-4ae0-956e-c7d5e2d0883d"></script>
+<style>
+  :root {
+    --fondo: #0B1220;
+    --texto: #F2F5FF;
+    --violeta: #A855F7;
+    --violeta-claro: #CE96FB;
+    --borde: #8B33E0;
+    --cian: #22D3EE;
+    /* Dónde vive la columna derecha: la usan el overlay de opciones y la
+       portada, así que el bloque no se mueve al apretar play. */
+    --col-derecha: 4.5%;
+    --col-ancho: 42%;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    overflow: hidden;
+  }
+
+  #escena {
+    position: relative;
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  /* ── El marco ────────────────────────────────────────────────
+     Tiene exactamente la forma del video (16:9), y todo lo demás va adentro.
+     Sin esto, "a la derecha" es a la derecha de la VENTANA: en una pantalla más
+     ancha que 16:9 los botones caerían sobre la franja negra del costado, fuera
+     de la imagen y lejos del brazo del robot que los señala. */
+  #marco {
+    position: relative;
+    width: min(100vw, calc(100vh * 16 / 9));
+    width: min(100vw, calc(100dvh * 16 / 9));
+    aspect-ratio: 16 / 9;
+    max-height: 100vh;
+    max-height: 100dvh;
+    overflow: hidden;
+  }
+
+  video {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    background: var(--fondo);
+    display: block;
+  }
+
+  /* ── Portada ─────────────────────────────────────────────────
+     Existe porque los navegadores bloquean el autoplay con audio.
+     No es un rodeo: sin un gesto del usuario, el video arranca mudo.
+
+     La imagen es un still de Remotion (composición `Portada`) con el mismo
+     fondo y el mismo personaje que el primer clip, así que apretar play no
+     cambia de escenario. El robot está corrido a la izquierda y saluda; el
+     texto y el play van a la derecha, donde después aparecen los botones. */
+  #portada {
+    position: absolute; inset: 0;
+    z-index: 20;
+    background: url("portada.jpg") center/cover no-repeat, var(--fondo);
+  }
+  /* Oscurece el lado del texto, no el de abajo: la foto tiene el pasillo
+     iluminado justo donde va el título. */
+  #portada::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(to left, rgba(11,18,32,.94) 26%, rgba(11,18,32,0) 66%);
+  }
+
+  .columna {
+    position: absolute;
+    right: var(--col-derecha);
+    top: 50%; transform: translateY(-50%);
+    width: var(--col-ancho);
+    display: flex; flex-direction: column;
+    z-index: 1;
+  }
+
+  #portada-panel { gap: 18px; align-items: flex-start; }
+  #portada-panel h1 {
+    margin: 0; font-size: clamp(22px, 3.1vw, 44px);
+    font-weight: 680; letter-spacing: -0.4px; line-height: 1.14;
+  }
+  #portada-panel p {
+    margin: 0; color: #B9C2DA;
+    font-size: clamp(13px, 1.35vw, 19px); line-height: 1.5; max-width: 30ch;
+  }
+
+  .play {
+    appearance: none; border: 0; cursor: pointer; padding: 0;
+    margin-top: 6px;
+    width: clamp(56px, 5.6vw, 84px); aspect-ratio: 1;
+    border-radius: 50%;
+    background: linear-gradient(180deg, var(--violeta-claro), var(--violeta));
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 10px 34px rgba(168, 85, 247, .42);
+    transition: transform .14s ease, box-shadow .14s ease;
+  }
+  .play:hover { transform: scale(1.06); box-shadow: 0 14px 42px rgba(168,85,247,.55); }
+  .play:active { transform: scale(1); }
+  .play svg { width: 38%; height: 38%; margin-left: 12%; fill: #10061F; }
+
+  /* ── Overlay de opciones ─────────────────────────────────────
+     Claro sobre oscuro, como manda PERSONAJE.md. Los botones van a la derecha
+     y centrados en altura: es la mitad que el robot deja libre al correrse
+     sobre el final de cada clip, y adonde apunta su brazo. */
+  #opciones {
+    position: absolute; inset: 0;
+    display: none;
+    background: linear-gradient(to left, rgba(11,18,32,.94) 26%, rgba(11,18,32,0) 66%);
+    z-index: 10;
+  }
+  #opciones.visible { display: block; }
+
+  #panel { gap: 13px; }
+  #pregunta {
+    margin: 0 0 4px; font-size: clamp(14px, 1.45vw, 20px);
+    color: #D4DAEC; font-weight: 560; line-height: 1.35;
+  }
+  .opcion {
+    appearance: none; cursor: pointer; font: inherit;
+    width: 100%;
+    padding: clamp(11px, 1.35vw, 17px) clamp(14px, 1.6vw, 26px);
+    border-radius: 14px;
+    font-size: clamp(14px, 1.45vw, 19px); font-weight: 600;
+    color: var(--texto);
+    background: rgba(31, 41, 68, .92);
+    border: 1.5px solid #2D3A5C;
+    text-align: left;
+    transition: background .15s ease, border-color .15s ease, transform .12s ease;
+  }
+  .opcion:hover {
+    background: rgba(56, 33, 92, .95);
+    border-color: var(--borde);
+    transform: translateX(-3px);
+  }
+  .opcion.salida {
+    background: linear-gradient(180deg, var(--violeta-claro), var(--violeta));
+    color: #10061F; border-color: transparent;
+  }
+  .opcion.suave {
+    background: transparent; border-color: #2D3A5C; color: #97A0B8;
+    font-weight: 500;
+  }
+
+  /* Barra de avance del clip: da idea de cuánto falta para elegir. */
+  #avance {
+    position: absolute; left: 0; bottom: 0; height: 3px; width: 0%;
+    background: var(--cian); opacity: .65; z-index: 12;
+    transition: width .2s linear;
+  }
+
+  #saltar {
+    position: absolute; right: 18px; bottom: 18px; z-index: 12;
+    appearance: none; border: 1px solid #2D3A5C; cursor: pointer;
+    background: rgba(11,18,32,.7); color: #8892AB;
+    font: inherit; font-size: 13px; padding: 7px 14px; border-radius: 999px;
+  }
+  #saltar:hover { color: var(--texto); border-color: var(--borde); }
+  #saltar.oculto { display: none; }
+
+  /* ── Celular en vertical ─────────────────────────────────────
+     Acá el cuadro 16:9 es una franja de un cuarto de la pantalla: los botones no
+     entran adentro y encima taparían al robot entero. Así que salen del marco y
+     se van al negro de abajo, que en vertical sobra.
+
+     Por eso van en `fixed`: se posicionan contra la ventana y no contra el
+     video. El degradado desaparece — sobre el fondo negro no hace falta. */
+  @media (max-aspect-ratio: 1/1) {
+    #opciones, #portada::after { background: none; }
+    #opciones { pointer-events: none; }
+    .columna {
+      position: fixed;
+      right: 0; left: 0; width: auto;
+      top: auto; bottom: 0; transform: none;
+      padding: 0 16px max(18px, env(safe-area-inset-bottom));
+      pointer-events: auto;
+    }
+    #portada-panel { align-items: center; text-align: center; gap: 14px; }
+    #portada-panel h1 { font-size: 24px; }
+    #portada-panel p { max-width: 34ch; font-size: 14px; }
+    #panel { gap: 10px; }
+    .opcion { text-align: center; font-size: 16px; padding: 14px 18px; }
+    #pregunta { text-align: center; font-size: 15px; margin-bottom: 2px; }
+    .play { width: 64px; align-self: center; }
+  }
+</style>
+</head>
+<body>
+
+<div id="escena">
+  <div id="marco">
+    <video id="video" playsinline preload="auto"></video>
+
+    <div id="avance"></div>
+    <button id="saltar" class="oculto">Saltar</button>
+
+    <div id="opciones">
+      <div id="panel" class="columna">
+        <p id="pregunta"></p>
+      </div>
+    </div>
+
+    <div id="portada">
+      <div id="portada-panel" class="columna">
+        <h1>Esto no es un video.</h1>
+        <p>Es interactivo: tiene botones, y lo que elijas cambia lo que sigue. Son menos de dos minutos.</p>
+        <button class="play" id="empezar" aria-label="Reproducir">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2.5v19l17-9.5z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="player.js"></script>
+</body>
+</html>
