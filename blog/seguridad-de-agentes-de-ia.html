@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>Seguridad de agentes de IA: qué revisar antes de darle acceso a tus sistemas | Varka</title>
+<meta name="description" content="Un agente de IA no solo responde: ejecuta acciones sobre tus sistemas. Qué cambia en seguridad, qué preguntarle a quien te lo armó y qué revisa una auditoría.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://varka.tech/blog/seguridad-de-agentes-de-ia">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://varka.tech/blog/seguridad-de-agentes-de-ia">
+<meta property="og:title" content="Seguridad de agentes de IA: qué revisar antes de darle acceso a tus sistemas">
+<meta property="og:description" content="Qué cambia cuando el bot deja de responder y empieza a ejecutar, las seis preguntas para quien te lo armó y qué entrega una auditoría de agentes.">
+<meta property="og:image" content="https://varka.tech/blog/img/seguridad-de-agentes-de-ia.jpg">
+<meta property="og:locale" content="es_AR">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Seguridad de agentes de IA: qué revisar antes de darle acceso a tus sistemas",
+  "description": "Un agente de IA no solo responde: ejecuta acciones sobre tus sistemas. Qué cambia en seguridad, qué preguntarle a quien te lo armó y qué revisa una auditoría.",
+  "image": "https://varka.tech/blog/img/seguridad-de-agentes-de-ia.jpg",
+  "author": {"@type": "Person", "name": "Gonzalo Terrones", "jobTitle": "Fundador y consultor de IA", "worksFor": {"@type": "Organization", "name": "Varka", "url": "https://varka.tech"}},
+  "publisher": {"@type": "Organization", "name": "Varka", "url": "https://varka.tech"},
+  "datePublished": "2026-08-19",
+  "mainEntityOfPage": "https://varka.tech/blog/seguridad-de-agentes-de-ia"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/widget.css">
+<!-- Umami Analytics -->
+<script defer src="https://analytics.varka.tech/script.js" data-website-id="d49f6204-1f1d-4ae0-956e-c7d5e2d0883d"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="nav-logo" href="/">
+    <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <polygon points="14,2 24.5,8 24.5,20 14,26 3.5,20 3.5,8" stroke="#5DCAA5" stroke-width="1.75" fill="rgba(29,158,117,.08)" stroke-linejoin="round"/>
+      <circle cx="14" cy="14" r="3" fill="#1D9E75"/>
+    </svg>
+    Varka
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="/consultora-ia">Consultora de IA</a></li>
+    <li><a href="/automatizaciones-ia">Automatizaciones</a></li>
+    <li><a href="/agentes-de-ia">Agentes de IA</a></li>
+    <li><a href="/ciberseguridad-ia">Ciberseguridad</a></li>
+    <li><a href="/posicionamiento-ia">GEO</a></li>
+    <li><a href="/precios">Precios</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="https://app.varka.tech" target="_blank" rel="noopener">Herramienta IA</a></li>
+  </ul>
+  <a class="nav-cta" href="https://cal.com/consultora-varka/diagnostico-gratuito" target="_blank" rel="noopener">Diagnóstico gratis</a>
+  <button class="hamburger" aria-label="Abrir menú" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+  <ul>
+    <li><a href="/consultora-ia">Consultora de IA</a></li>
+    <li><a href="/automatizaciones-ia">Automatizaciones con IA</a></li>
+    <li><a href="/agentes-de-ia">Agentes de IA</a></li>
+    <li><a href="/ciberseguridad-ia">Ciberseguridad</a></li>
+    <li><a href="/posicionamiento-ia">GEO — Posicionamiento en IA</a></li>
+    <li><a href="/precios">Precios</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="https://app.varka.tech" target="_blank" rel="noopener">Herramienta IA</a></li>
+  </ul>
+  <a class="mobile-cta" href="https://cal.com/consultora-varka/diagnostico-gratuito" target="_blank" rel="noopener">Diagnóstico gratuito</a>
+</div>
+
+<!-- CABECERA -->
+<header class="blog-head">
+  <div class="blog-head-inner">
+    <div class="kicker">Ciberseguridad</div>
+    <h1>Seguridad de agentes de IA: qué revisar antes de darle acceso a tus sistemas</h1>
+    <div class="article-meta">
+      <span class="tag">Ciberseguridad</span>
+      <span>Lectura de 7 min</span>
+    </div>
+  </div>
+</header>
+
+<!-- ARTÍCULO -->
+<article class="article">
+  <div class="article-inner">
+    <img class="article-img" src="/blog/img/seguridad-de-agentes-de-ia.jpg" alt="Operador de espaldas frente a una consola de control con varias pantallas encendidas">
+
+    <div class="article-body">
+      <p>Un chatbot que contesta preguntas y un agente que ejecuta acciones parecen la misma cosa del lado del usuario. Del lado de la seguridad no se parecen en nada. Uno puede equivocarse en una respuesta. El otro puede emitir una nota de crédito, escribirle a tu base de clientes o abrir la ficha de alguien que no correspondía.</p>
+
+      <p>La diferencia no es de tamaño, es de naturaleza: <strong>el agente actúa sobre tus sistemas</strong>. Y casi siempre llegó ahí sin que nadie tomara la decisión de golpe.</p>
+
+      <h2>El día que dejó de ser un chatbot</h2>
+      <p>Nadie se sienta a decidir "voy a poner un agente con permisos de escritura". Pasa así: primero el bot contesta horarios. Después se lo conecta al catálogo, porque quedaba mal que no supiera precios. Después al sistema de gestión, para que cargue el pedido en vez de pasarle la consulta a alguien. Después se le da la agenda, para que confirme turnos solo.</p>
+
+      <p>Cada paso, mirado solo, es razonable. El conjunto es otra cosa: un sistema que decide y ejecuta sobre la operación. <strong>Y en general nadie volvió a revisar qué puede hacer exactamente</strong>, porque cada permiso se dio en un momento distinto y por un motivo distinto.</p>
+
+      <h2>Cinco cosas que cambian cuando el agente ejecuta</h2>
+
+      <h3>1. Los permisos de las herramientas</h3>
+      <p>El agente usa herramientas —una consulta al CRM, un envío de mail, una carga en el sistema— y cada una corre con una credencial. En la práctica esa credencial casi siempre puede mucho más de lo que la tarea necesita, porque es la que ya existía. El agente hereda todo lo que esa llave abre, no solamente lo que le pediste.</p>
+
+      <h3>2. Lo que el agente lee también es entrada</h3>
+      <p>Este es el punto que más cuesta ver. Un agente no recibe instrucciones solo del que le escribe: también procesa lo que le das para trabajar. Un mail, un PDF, un ticket, el campo de observaciones de un registro. <strong>Cualquiera que pueda escribir en una de esas fuentes le está pasando texto al agente</strong>, y el agente no distingue por sí solo entre un dato y una orden. Es la diferencia de fondo con un formulario, que solo guarda lo que le tipean.</p>
+
+      <h3>3. Qué sale hacia el modelo</h3>
+      <p>Para responder, el agente manda contexto al proveedor del modelo de IA. Vale la pena tener escrito qué parte de la conversación, del documento o de la base viaja, y qué dice el contrato del proveedor sobre el uso de eso. No es una pregunta técnica, es una pregunta de contrato.</p>
+
+      <h3>4. Los servidores de terceros que le conectaste</h3>
+      <p>Los agentes se conectan a servicios externos por protocolos pensados para eso. Cuando se suma uno, el agente hereda lo que ese servicio puede hacer. Conviene saber quién lo mantiene, qué permisos pide y qué pasa el día que cambie de manos.</p>
+
+      <h3>5. El registro de lo que hizo</h3>
+      <p>Si dentro de tres meses un cliente reclama por algo que hizo el agente, la pregunta va a ser qué hizo, cuándo y con qué información. <strong>Sin registro no hay investigación posible y tampoco hay con qué defenderse.</strong> Es lo primero que se pide en un reclamo y lo último que se suele configurar.</p>
+
+      <h2>Esto no es una opinión, está escrito en un estándar</h2>
+      <p>OWASP —la organización que publica la lista de riesgos de seguridad que usa media industria— mantiene un Top 10 específico de riesgos de aplicaciones con modelos de lenguaje y, además, una guía dedicada a agentes: <strong>diecisiete amenazas identificadas y un árbol de decisión</strong> para determinar cuáles aplican según cómo esté armado el agente. Una de esas amenazas trata puntualmente los protocolos de comunicación entre agentes y servidores, nombrándolos por su nombre.</p>
+
+      <p>Que exista el estándar cambia la conversación. No hace falta convencer a nadie de que el riesgo existe: está publicado y cualquiera puede leerlo. Lo que hace falta es saber cuáles de esas amenazas aplican a tu caso, porque buena parte corresponde a sistemas con varios agentes coordinándose y no le tocan a una empresa con un agente atendiendo WhatsApp.</p>
+
+      <h2>Por qué el pentest que te hicieron no cubrió esto</h2>
+      <p>Si ya te hicieron una auditoría de seguridad, probablemente revisaron la aplicación, la infraestructura y los accesos. Está bien que así sea. Pero una revisión de agentes <strong>no reemplaza al pentest de infraestructura, a la seguridad perimetral ni al respaldo de datos: es la capa que esas revisiones no miran</strong>.</p>
+
+      <p>Un pentest clásico evalúa un sistema que responde de manera previsible a lo que se le pide. Un agente decide. Son dos objetos distintos y se revisan distinto.</p>
+
+      <h2>Seis preguntas para quien te armó el agente</h2>
+      <p>No hace falta ser técnico para hacerlas. Son las que cualquier proveedor serio puede contestar sin preparación:</p>
+      <ol>
+        <li><strong>¿Qué herramientas tiene habilitadas y qué puede hacer cada una?</strong> Pedila por escrito. Si la lista no existe, ese es el primer hallazgo.</li>
+        <li><strong>¿Con qué credenciales corre y qué más abren esas credenciales?</strong> La pregunta real es qué pasaría si esa llave se filtrara.</li>
+        <li><strong>¿Qué pasa si alguien deja una instrucción escondida en un documento o un mail que el agente va a leer?</strong></li>
+        <li><strong>¿Qué información sale hacia el proveedor del modelo y qué dice el contrato sobre su uso?</strong></li>
+        <li><strong>¿Qué acciones ejecuta sin que una persona confirme, y cuál es el tope?</strong> Un límite de monto o de cantidad convierte un incidente grave en uno molesto.</li>
+        <li><strong>¿Qué queda registrado de cada acción y por cuánto tiempo?</strong></li>
+      </ol>
+      <p>Si las respuestas son vagas, en general no es mala fe. Es que el agente se fue armando por partes y nadie se detuvo a mirar el conjunto.</p>
+
+      <h2>Qué entrega una auditoría de agentes</h2>
+      <p>Concretamente, lo que recibís:</p>
+      <ul>
+        <li><strong>El inventario real</strong> de herramientas, permisos y conexiones a terceros que el agente tiene hoy. Casi siempre difiere de lo que la empresa cree tener.</li>
+        <li><strong>Los hallazgos clasificados por riesgo</strong>, con el impacto explicado en términos de negocio y no de jerga.</li>
+        <li><strong>Un orden de corrección</strong>: qué se arregla esta semana, qué puede esperar y qué directamente no vale la pena tocar.</li>
+        <li><strong>Re-test opcional</strong> después de las correcciones, para confirmar que lo que se arregló quedó arreglado.</li>
+      </ul>
+      <p>Todo empieza con alcance definido y <strong>autorización firmada</strong>. Sin ese papel no se toca nada, y un proveedor que ofrezca saltearlo está ofreciendo un problema legal además de un servicio.</p>
+
+      <h2>Un caso, sin nombre</h2>
+      <p>Un SaaS de bienestar corporativo que maneja datos de salud de empleados. La revisión encontró tres fallas críticas; una de ellas permitía acceder a información de salud de un usuario desde una cuenta que no tenía por qué verla.</p>
+      <p>No era un sistema abandonado ni hecho a las apuradas: era un producto en producción, con clientes, construido por gente que sabe. <strong>Eso es lo habitual.</strong> Las fallas de este tipo no aparecen por descuido, aparecen porque el sistema creció por capas y nadie tenía el trabajo de mirarlo entero.</p>
+
+      <h2>Cuánto cuesta</h2>
+      <p>Los precios están publicados, que en este rubro no es lo común: la auditoría express arranca en <strong>USD 1.200</strong>, la completa —que suma lógica de negocio y pruebas de concepto— en <strong>USD 2.500</strong>, y si además hay que corregir lo encontrado y volver a testear, desde <strong>USD 4.500</strong>. El detalle está en <a href="/precios">la página de precios</a> y el alcance en <a href="/ciberseguridad-ia">ciberseguridad</a>.</p>
+
+      <h2>Cuándo conviene mirarlo</h2>
+      <p>Antes de que haga falta. Hay tres momentos en los que se vuelve urgente y suele ser tarde: cuando un cliente grande manda su cuestionario de proveedores, cuando aparece un inversor haciendo due diligence, y cuando algo ya pasó.</p>
+      <p>En los tres casos la pregunta es la misma —qué puede hacer ese agente y quién responde por lo que hizo— y llega de alguien que no está esperando una respuesta improvisada.</p>
+
+    </div>
+
+    <div class="article-cta">
+      <h3>¿Querés aplicar esto en tu negocio?</h3>
+      <p>Agendá un diagnóstico gratuito de 1 hora y te mostramos qué puede hacer la IA por tu empresa.</p>
+      <a class="btn-primary" href="https://cal.com/consultora-varka/diagnostico-gratuito" target="_blank" rel="noopener">Agendá tu diagnóstico gratuito</a>
+    </div>
+
+    <a class="article-back" href="/blog/">← Volver al blog</a>
+  </div>
+</article>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <a class="footer-logo" href="/">
+        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" aria-hidden="true"><polygon points="14,2 24.5,8 24.5,20 14,26 3.5,20 3.5,8" stroke="#5DCAA5" stroke-width="1.75" fill="rgba(29,158,117,.08)" stroke-linejoin="round"/><circle cx="14" cy="14" r="3" fill="#1D9E75"/></svg>
+        Varka
+      </a>
+      <p class="footer-tagline">Consultora de IA para empresas que quieren crecer sin complicarse.</p>
+      <a class="footer-email" href="https://mail.google.com/mail/?view=cm&to=consultas@varka.tech&su=Consulta desde varka.tech" target="_blank" rel="noopener">consultas@varka.tech</a><br>
+      <a class="footer-email" href="https://wa.me/5491125653768" target="_blank" rel="noopener">+54 9 11 2565-3768</a>
+    </div>
+    <div class="footer-col">
+      <h4>Soluciones</h4>
+      <ul>
+        <li><a href="/consultora-ia">Consultora de IA</a></li>
+        <li><a href="/automatizaciones-ia">Automatizaciones con IA</a></li>
+        <li><a href="/agentes-de-ia">Agentes de IA</a></li>
+        <li><a href="/ciberseguridad-ia">Ciberseguridad</a></li>
+        <li><a href="/posicionamiento-ia">Posicionamiento en IA (GEO)</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/#faq">Preguntas frecuentes</a></li>
+        <li><a href="https://cal.com/consultora-varka/diagnostico-gratuito" target="_blank" rel="noopener">Agendar</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Seguinos</h4>
+      <ul>
+        <li><a href="https://www.linkedin.com/company/varka-consultora/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/consultoravarka/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://wa.me/5491125653768" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Varka. Todos los derechos reservados.</p>
+    <div class="footer-links"><a href="/">Inicio</a></div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
+  const hb = document.getElementById('hamburger'), mn = document.getElementById('mobile-nav');
+  hb.addEventListener('click', () => { hb.classList.toggle('open'); mn.classList.toggle('open'); });
+  mn.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { hb.classList.remove('open'); mn.classList.remove('open'); }));
+</script>
+<script src="/widget.js" defer></script>
+</body>
+</html>

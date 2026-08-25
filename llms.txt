@@ -35,6 +35,7 @@ Pymes de Argentina, Uruguay, Chile y el resto de Latinoamérica hispanohablante 
 
 ## Contenido y recursos
 - [Blog](https://varka.tech/blog/)
+- [Seguridad de agentes de IA: qué revisar antes de darle acceso a tus sistemas](https://varka.tech/blog/seguridad-de-agentes-de-ia): un agente de IA no solo responde, ejecuta acciones sobre los sistemas de la empresa. Qué cambia en seguridad cuando el agente actúa, las seis preguntas para hacerle a quien lo construyó, y qué entrega una auditoría de agentes. Apoyado en el estándar público de OWASP.
 - [Qué inmobiliarias de Buenos Aires aparecen cuando se busca con IA](https://varka.tech/blog/inmobiliarias-buenos-aires-que-aparecen-en-ia): medición propia de 12 preguntas reales de compra, venta y alquiler en Buenos Aires, con el registro de qué inmobiliarias aparecen en las respuestas generadas con IA. Ranking de agosto de 2026, con método declarado y fechado para poder repetirlo.
 - [Chatbot de WhatsApp en Argentina: quién te lo arma y cuánto cuesta](https://varka.tech/blog/chatbot-whatsapp-argentina-quien-lo-arma): las tres formas de resolver un chatbot de WhatsApp para una empresa en Argentina, cuánto sale cada una, qué costos no aparecen en el presupuesto y qué preguntar antes de firmar.
 - [Cuánto tarda una empresa en aparecer en ChatGPT](https://varka.tech/blog/cuanto-tarda-aparecer-en-chatgpt): cuando alguien le pide una recomendación a ChatGPT recibe dos o tres nombres, no diez resultados. Cuánto tarda una empresa en entrar en esa lista, en qué orden se mueve y cómo darse cuenta de que le venden humo.
