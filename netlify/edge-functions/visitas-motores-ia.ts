@@ -81,8 +81,14 @@ export default async (request: Request, context: Context) => {
       method: "POST",
       headers: {
         "content-type": "application/json",
-        // Umami descarta la request si no viene un User-Agent propio.
-        "user-agent": "varka-edge-visitas-ia/1.0",
+        // OJO: Umami tiene filtro de bots y descarta el evento si el
+        // User-Agent no parece un navegador — responde {"beep":"boop"} con
+        // HTTP 200 y no guarda nada, asi que falla en silencio. Verificado el
+        // 28/08/2026 contra la base: con un UA propio, 0 filas; con este, la
+        // fila entra. El agente real del motor viaja en data.agente, no se
+        // pierde nada.
+        "user-agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
       },
       body: JSON.stringify({
         type: "event",
