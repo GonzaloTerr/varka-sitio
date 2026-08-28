@@ -3,10 +3,14 @@ import type { Config, Context } from "@netlify/edge-functions";
 // Registra en Umami cuando un motor de IA pasa por el sitio. Son dos cosas
 // distintas y por eso van como dos eventos separados:
 //
-//   visita-motor-ia  -> alguien le preguntó algo al motor y el motor vino a
-//                       leer la página para contestarle. Indica intención.
-//   rastreo-motor-ia -> el rastreador pasó solo, indexando o juntando material
-//                       de entrenamiento. Indica que el contenido se ingirió.
+//   ia_consulta -> alguien le preguntó algo al motor y el motor vino a leer la
+//                  página para contestarle. Indica intención. OJO: no visitó
+//                  una persona, y por eso el evento NO se llama "visita".
+//   ia_rastreo  -> el rastreador pasó solo, indexando o juntando material de
+//                  entrenamiento. Atrás no hay nadie.
+//
+// El prefijo ia_ es a propósito: agrupa estos dos y los separa de los video_*
+// en la vista de eventos de Umami, que los muestra todos mezclados.
 //
 // La contraparte de todo esto es el referido (chatgpt.com, gemini.google.com,
 // etc.), que Umami ya registra por su cuenta y dice que entró una persona.
@@ -55,10 +59,10 @@ const RASTREADORES: Array<[string, string]> = [
 
 function identificar(ua: string): [string, string, string] | null {
   const usuario = AGENTES_USUARIO.find(([token]) => ua.includes(token));
-  if (usuario) return ["visita-motor-ia", usuario[1], "usuario"];
+  if (usuario) return ["ia_consulta", usuario[1], "usuario"];
 
   const rastreador = RASTREADORES.find(([token]) => ua.includes(token));
-  if (rastreador) return ["rastreo-motor-ia", rastreador[1], "rastreo"];
+  if (rastreador) return ["ia_rastreo", rastreador[1], "rastreo"];
 
   return null;
 }
