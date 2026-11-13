@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>Gemelos Inteligentes: una IA por puesto para tu empresa | Varka</title>
+<meta name="description" content="Gemelos Inteligentes: cada puesto de la empresa con su propia IA, conectadas entre sí y con los sistemas que ya usan. La IA prepara, una persona aprueba y el sistema ejecuta y registra. La dirección consulta toda la operación cuando quiere.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://varka.tech/gemelos-inteligentes">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://varka.tech/gemelos-inteligentes">
+<meta property="og:title" content="Gemelos Inteligentes: una IA por puesto para tu empresa | Varka">
+<meta property="og:description" content="No es otro chatbot ni otra automatización: es un sistema de IAs, una por puesto, conectadas entre sí. La dirección tiene toda la empresa a una pregunta de distancia.">
+<meta property="og:image" content="https://varka.tech/og-image.jpg">
+<meta property="og:locale" content="es_AR">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Gemelos Inteligentes",
+  "alternateName": ["Gemelos digitales de empleados", "Una IA por puesto de trabajo"],
+  "serviceType": "Sistema de inteligencia artificial para la operación de empresas",
+  "description": "Sistema en el que cada puesto de la empresa tiene su propia IA, preparada con los procesos del puesto, conectada con las IAs de los otros puestos y con los sistemas de la empresa. La IA prepara, una persona aprueba y el sistema ejecuta y registra. La dirección consulta toda la información del sistema cuando quiere.",
+  "provider": {"@type": "Organization", "name": "Varka", "url": "https://varka.tech"},
+  "areaServed": ["Argentina", "Latinoamérica"],
+  "url": "https://varka.tech/gemelos-inteligentes"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "¿Qué es un Gemelo Inteligente?", "acceptedAnswer": {"@type": "Answer", "text": "Es la IA de un puesto de trabajo: conoce los procesos, los documentos y los sistemas de ese puesto, y hace el trabajo que la persona le pide. No es un asistente suelto: cada gemelo está conectado con los de los otros puestos y con los sistemas de la empresa, y lo que prepara pasa siempre por la aprobación de su responsable."}},
+    {"@type": "Question", "name": "¿Qué puede consultar la dirección?", "acceptedAnswer": {"@type": "Answer", "text": "Todo lo que pasa por el sistema: cobranzas, pagos, caja, impuestos, sueldos, personal y dónde se traba el trabajo. Puede pedir el informe de la semana o hacer una pregunta suelta, y la respuesta sale de los datos del momento, sin pedirle un informe a nadie. Ve todo, pero no le llega todo: no recibe cada aviso ni cada aprobación de los puestos, consulta lo que le interesa."}},
+    {"@type": "Question", "name": "¿Reemplaza a los empleados?", "acceptedAnswer": {"@type": "Answer", "text": "No. Cada gemelo tiene un responsable: la persona que ocupa el puesto. La IA prepara el trabajo y la persona decide. Lo que se saca de encima son las tareas repetitivas y la búsqueda de información, no las decisiones."}},
+    {"@type": "Question", "name": "¿En qué se diferencia de darle ChatGPT o Copilot a cada empleado?", "acceptedAnswer": {"@type": "Answer", "text": "Un asistente de chat contesta lo que le pregunta quien lo usa. Un gemelo conoce los procesos del puesto, trabaja conectado con los otros puestos y con los sistemas de la empresa, avisa cuando algo se sale del procedimiento y deja registro de quién aprobó cada acción. Si la empresa ya paga licencias de IA, se aprovechan."}},
+    {"@type": "Question", "name": "¿Quién ve la información confidencial, como los sueldos?", "acceptedAnswer": {"@type": "Answer", "text": "Cada IA ve solo lo que su puesto tiene permitido, igual que la persona. Por ejemplo, el sueldo de cada empleado lo ven Recursos Humanos y la dirección; Tesorería recibe el total a pagar. Los permisos se controlan por sistema, no se le piden a la IA. La vista de la dirección mide procesos, no califica personas."}},
+    {"@type": "Question", "name": "¿Hay que cambiar de sistema?", "acceptedAnswer": {"@type": "Answer", "text": "No. Se arma sobre lo que la empresa ya usa: Microsoft 365 o Google Workspace para el mail, la agenda y los documentos, y el sistema de gestión que tenga, sea SAP, Odoo, Tango u otro. Cómo se conecta cada sistema se define en el diagnóstico."}},
+    {"@type": "Question", "name": "¿Cuánto cuesta?", "acceptedAnswer": {"@type": "Answer", "text": "Depende de cuántos puestos entran y de qué sistemas hay que conectar, así que se cotiza después del diagnóstico del área por la que se empieza."}}
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/widget.css">
+<style>
+  /* Propio de esta pagina */
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+  .capa-num { font-size: .75rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--verde-marca); margin-bottom: .6rem; }
+  .sistemas { margin-top: 1.5rem; border: 1px dashed rgba(15,42,30,.25); border-radius: 12px; padding: 1.1rem 1.5rem; font-size: .9rem; color: var(--texto-medio); line-height: 1.7; }
+  .sistemas b { color: var(--texto-oscuro); font-weight: 500; }
+
+  .direccion { background: var(--verde-noche); padding: 6rem 3rem; color: var(--blanco); }
+  .direccion .section-tag { color: var(--verde-claro); }
+  .direccion h2 { font-family: 'DM Serif Display', serif; font-size: clamp(2rem,4vw,3rem); line-height: 1.15; letter-spacing: -.02em; max-width: 760px; margin-bottom: 1.5rem; }
+  .direccion h2 em { color: var(--verde-claro); }
+  .direccion .intro { font-size: 1rem; color: rgba(250,250,248,.78); max-width: 640px; line-height: 1.75; }
+  .dir-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 3rem; margin-top: 3rem; align-items: start; }
+  .preguntas { display: flex; flex-direction: column; gap: .75rem; }
+  .preg { align-self: flex-start; background: rgba(93,202,165,.12); border: 1px solid rgba(93,202,165,.3); border-radius: 14px 14px 14px 4px; padding: .8rem 1.1rem; font-size: .95rem; line-height: 1.5; }
+  .dir-puntos { list-style: none; display: flex; flex-direction: column; gap: 1.25rem; }
+  .dir-puntos h3 { font-size: 1rem; font-weight: 500; margin-bottom: .35rem; }
+  .dir-puntos p { font-size: .9rem; color: rgba(250,250,248,.72); line-height: 1.7; }
+
+  .comparar { width: 100%; border-collapse: collapse; margin-top: 3rem; font-size: .9rem; }
+  .comparar th, .comparar td { text-align: left; vertical-align: top; padding: 1rem 1.1rem; border-bottom: 1px solid rgba(15,42,30,.1); line-height: 1.6; }
+  .comparar thead th { font-weight: 500; color: var(--texto-oscuro); font-size: .95rem; }
+  .comparar tbody th { font-weight: 500; color: var(--texto-oscuro); width: 16%; }
+  .comparar td { color: var(--texto-medio); }
+  .comparar .gemelo { background: var(--menta); color: var(--texto-oscuro); }
+  .comparar thead .gemelo { border-radius: 10px 10px 0 0; }
+  .remate { margin-top: 2rem; font-family: 'DM Serif Display', serif; font-size: clamp(1.3rem,2.4vw,1.7rem); color: var(--texto-oscuro); line-height: 1.3; max-width: 760px; }
+
+  .lista { list-style: none; display: flex; flex-direction: column; gap: .6rem; margin-top: .25rem; }
+  .lista li { font-size: .875rem; color: var(--texto-medio); line-height: 1.6; padding-left: 1.1rem; position: relative; }
+  .lista li::before { content: ""; position: absolute; left: 0; top: .6em; width: 6px; height: 6px; border-radius: 50%; background: var(--verde-marca); }
+  .nota { margin-top: 2rem; font-size: .85rem; color: var(--texto-medio); }
+
+  @media (max-width: 900px) {
+    .grid-3, .dir-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 768px) {
+    .direccion { padding-left: 1.5rem; padding-right: 1.5rem; }
+    .comparar thead { display: none; }
+    .comparar, .comparar tbody, .comparar tr, .comparar th, .comparar td { display: block; width: 100%; }
+    .comparar tr { border: 1px solid rgba(15,42,30,.1); border-radius: 12px; margin-bottom: 1rem; overflow: hidden; background: var(--blanco); }
+    .comparar tbody th { width: 100%; background: var(--arena); }
+    .comparar td { border-bottom: 1px solid rgba(15,42,30,.06); }
+    .comparar td::before { content: attr(data-col); display: block; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--verde-marca); margin-bottom: .2rem; }
+  }
+</style>
+<!-- Umami Analytics -->
+<script defer src="https://analytics.varka.tech/script.js" data-website-id="d49f6204-1f1d-4ae0-956e-c7d5e2d0883d"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="nav-logo" href="/">
+    <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+      <polygon points="14,2 24.5,8 24.5,20 14,26 3.5,20 3.5,8" stroke="#5DCAA5" stroke-width="1.75" fill="rgba(29,158,117,.08)" stroke-linejoin="round"/>
+      <circle cx="14" cy="14" r="3" fill="#1D9E75"/>
+    </svg>
+    Varka
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="/consultora-ia">Consultora de IA</a></li>
+    <li><a href="/automatizaciones-ia">Automatizaciones</a></li>
+    <li><a href="/agentes-de-ia">Agentes de IA</a></li>
+    <li><a href="/gemelos-inteligentes">Gemelos Inteligentes</a></li>
+    <li><a href="/ciberseguridad-ia">Ciberseguridad</a></li>
+    <li><a href="/posicionamiento-ia">GEO</a></li>
+    <li><a href="/precios">Precios</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="https://app.varka.tech" target="_blank" rel="noopener">Herramienta IA</a></li>
+  </ul>
+  <a class="nav-cta" href="https://cal.com/consultora-varka/diagnostico-gratuito" target="_blank" rel="noopener">Diagnóstico gratis</a>
+  <button class="hamburger" aria-label="Abrir menú" aria-expanded="false" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+  <ul>
+    <li><a href="/consultora-ia">Consultora de IA</a></li>
+    <li><a href="/automatizaciones-ia">Automatizaciones con IA</a></li>
+    <li><a href="/agentes-de-ia">Agentes de IA</a></li>
+    <li><a href="/gemelos-inteligentes">Gemelos Inteligentes</a></li>
+    <li><a href="/ciberseguridad-ia">Ciberseguridad</a></li>
+    <li><a href="/posicionamiento-ia">GEO — Posicionamiento en IA</a></li>
+    <li><a href="/precios">Precios</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="https://app.varka.tech" target="_blank" rel="noopener">Herramienta IA</a></li>
+  </ul>
+  <a class="mobile-cta" href="https://cal.com/consultora-varka/diagnostico-gratuito" target="_blank" rel="noopener">Diagnóstico gratuito</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner single">
+    <div class="hero-content">
+      <div class="hero-tag"><span></span>Gemelos Inteligentes</div>
+      <h1>Cada puesto de tu empresa, <em>con su propia IA</em></h1>
+      <p>No son asistentes sueltos: es un sistema. Cada puesto tiene una IA preparada con sus procesos, que trabaja conectada con las de los otros puestos y con los sistemas que la empresa ya usa. El trabajo se mueve más rápido, los errores se frenan antes de que salgan y nada se ejecuta sin la aprobación de una persona. Y la dirección tiene toda la empresa a una pregunta de distancia.</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="https://wa.me/5491125653768?text=Hola%2C%20quiero%20ver%20la%20demo%20de%20Gemelos%20Inteligentes" target="_blank" rel="noopener">
+          Pedí la demo
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn-secondary" href="#como-funciona">Cómo funciona</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUE CAMBIA -->
+<section class="problem">
+  <div class="section-inner">
+    <div class="section-tag">Qué cambia</div>
+    <h2>Más velocidad, más control y toda la información a la vista</h2>
+    <p>Hoy el trabajo espera a que alguien esté libre, los errores se descubren cuando ya pasaron y, para saber cómo viene la empresa, hay que pedir un informe. Con un gemelo en cada puesto, eso cambia en toda la operación.</p>
+    <div class="problem-grid">
+      <div class="problem-card fade-up">
+        <h3>Velocidad: el trabajo no espera</h3>
+        <p>Las IAs se piden y se pasan el trabajo entre ellas sin esperar a que la otra persona esté libre. Lo que hoy es un mail y horas de espera entre áreas se resuelve en el momento, y cada persona encuentra lo que necesita sin buscarlo.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <h3>Control: los errores se frenan antes</h3>
+        <p>Cada factura se controla contra la orden de compra y el remito, y cada pago contra la cuenta registrada. Si algo se sale del procedimiento, la IA avisa antes de que salga. Nada se ejecuta sin aprobación, y todo queda registrado.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <h3>Información: la dirección sabe en el momento</h3>
+        <p>Cobranza, caja, pagos, impuestos o sueldos, a una pregunta de distancia y con los datos de ese momento. Sin informes armados a mano que llegan tarde.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <h3>Continuidad: el puesto no depende de una persona</h3>
+        <p>Lo que sabe cada puesto queda en su IA. Vacaciones, una renuncia o alguien nuevo dejan de frenar el trabajo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO ESTA ARMADO -->
+<section class="services" id="como-funciona">
+  <div class="section-inner">
+    <div class="section-tag">Cómo está armado</div>
+    <h2>Tres capas que trabajan juntas</h2>
+    <p>Cada IA tiene un responsable humano: la persona que ocupa el puesto. Ella pide, y ella confirma antes de que algo salga o se cargue.</p>
+    <div class="grid-3">
+      <div class="problem-card fade-up">
+        <div class="capa-num">Capa 1</div>
+        <h3>Cada puesto, con su IA</h3>
+        <p>Preparada con los procesos, los documentos y los permisos de ese puesto. La persona le pide un mail, un control, una carga o un informe, y la IA lo deja listo para aprobar.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <div class="capa-num">Capa 2</div>
+        <h3>Entre los puestos</h3>
+        <p>Las IAs se consultan y se pasan el trabajo entre ellas, sin esperar a que la otra persona esté libre. Cada una comparte solo lo que su puesto puede compartir.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <div class="capa-num">Capa 3</div>
+        <h3>La dirección</h3>
+        <p>Una IA que ve toda la operación y le contesta a la dirección lo que quiera saber, con los datos del momento.</p>
+      </div>
+    </div>
+    <div class="sistemas"><b>Debajo, los sistemas que la empresa ya usa:</b> mail, agenda, documentos, CRM y sistema de gestión. No es otra herramienta para aprender.</div>
+  </div>
+</section>
+
+<!-- LA DIRECCION -->
+<section class="direccion">
+  <div class="section-inner">
+    <div class="section-tag">Para la dirección</div>
+    <h2>Toda la empresa, <em>a una pregunta de distancia</em></h2>
+    <p class="intro">El director, el socio o el gerente general tiene acceso a toda la información del sistema, en el momento. Puede pedir el informe de la semana o hacer una pregunta suelta, y la respuesta sale de los datos de ese momento, sin pedirle un informe a nadie.</p>
+    <div class="dir-grid">
+      <div class="preguntas fade-up">
+        <div class="preg">¿Cómo viene el área de administración esta semana?</div>
+        <div class="preg">¿Qué clientes nos deben más de 30 días?</div>
+        <div class="preg">¿Alcanza la caja para los pagos de los próximos 15 días?</div>
+        <div class="preg">¿Cuánto vamos a pagar de sueldos este mes?</div>
+        <div class="preg">¿Dónde se está trabando el trabajo?</div>
+      </div>
+      <ul class="dir-puntos fade-up">
+        <li><h3>Acceso total</h3><p>Cobranzas, pagos, caja, impuestos, sueldos, personal y el estado de cada proceso. Todo lo que pasa por el sistema está a la vista de la dirección.</p></li>
+        <li><h3>El informe que nadie arma</h3><p>Lo facturado y lo cobrado, la deuda vencida, los pagos de la semana, los vencimientos y las alertas, armado con los datos reales cada vez que lo pide.</p></li>
+        <li><h3>Ve todo, pero no le llega todo</h3><p>No recibe cada aviso ni cada aprobación de los puestos. Consulta lo que le interesa, cuando quiere, y al empezar el día tiene un resumen corto.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- NO ES -->
+<section class="services arena">
+  <div class="section-inner">
+    <div class="section-tag">La diferencia</div>
+    <h2>No es otro chatbot ni otra automatización</h2>
+    <p>Las automatizaciones y los asistentes de chat sirven, pero hacen otra cosa. Un gemelo usa las automatizaciones para ejecutar, y hace lo que un asistente suelto no puede: trabajar con los procesos del puesto y con el resto de la empresa.</p>
+    <table class="comparar">
+      <thead>
+        <tr><th></th><th>Una automatización</th><th>Un asistente de chat</th><th class="gemelo">Un Gemelo Inteligente</th></tr>
+      </thead>
+      <tbody>
+        <tr><th>Qué hace</th><td data-col="Una automatización">Repite la misma tarea, siempre en el mismo orden.</td><td data-col="Un asistente de chat">Contesta lo que cada persona le pregunta.</td><td class="gemelo" data-col="Un Gemelo Inteligente">Hace el trabajo del puesto con sus procesos, y usa las automatizaciones para ejecutarlo.</td></tr>
+        <tr><th>Si algo sale distinto</th><td data-col="Una automatización">Se frena o sigue de largo.</td><td data-col="Un asistente de chat">Depende de que la persona se dé cuenta.</td><td class="gemelo" data-col="Un Gemelo Inteligente">Avisa del desvío y propone cómo corregirlo.</td></tr>
+        <tr><th>Entre puestos</th><td data-col="Una automatización">No sabe que existen otros puestos.</td><td data-col="Un asistente de chat">Cada uno lo usa por su cuenta.</td><td class="gemelo" data-col="Un Gemelo Inteligente">Les pide y les pasa el trabajo a las IAs de los otros puestos.</td></tr>
+        <tr><th>Quién decide</th><td data-col="Una automatización">Nadie: estaba programado.</td><td data-col="Un asistente de chat">La persona, copiando y pegando.</td><td class="gemelo" data-col="Un Gemelo Inteligente">La IA prepara, una persona aprueba y el sistema ejecuta y registra.</td></tr>
+      </tbody>
+    </table>
+    <p class="remate">No hace tareas sueltas: lleva la operación del puesto, y la decisión queda siempre en manos de una persona.</p>
+  </div>
+</section>
+
+<!-- EJEMPLO -->
+<section class="problem">
+  <div class="section-inner">
+    <div class="section-tag">Un ejemplo: Administración y Finanzas</div>
+    <h2>Un día cualquiera en el área</h2>
+    <p>Así trabaja el sistema en el área de Administración y Finanzas de una empresa de 85 empleados: facturación y cobranzas, cuentas a pagar, tesorería, impuestos y recursos humanos.</p>
+    <div class="problem-grid">
+      <div class="problem-card fade-up">
+        <h3>Una factura que no cierra</h3>
+        <p>Entran cinco facturas de proveedores. La IA de Cuentas a Pagar las controla contra la orden de compra y el remito: carga las que están bien y frena una con el precio 6% arriba de lo acordado y otra con 200 kg más de lo que se recibió.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <h3>Un mail que pide cambiar el CBU</h3>
+        <p>Llega un mail de un proveedor que pide pagarle a una cuenta nueva, con urgencia, desde un dominio parecido al real. La IA lo marca como posible fraude y pide confirmarlo por teléfono al número registrado. El pago sigue yendo a la cuenta de siempre.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <h3>"Ya les pagamos"</h3>
+        <p>Un cliente dice que ya pagó. La IA de Cobranzas le pregunta a la de Tesorería, que encuentra la transferencia sin imputar por el importe exacto de la factura. Nadie tuvo que levantarse a preguntar.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <h3>La propuesta de pago</h3>
+        <p>Cuentas a Pagar arma el pago de un proveedor; la IA de Impuestos calcula las retenciones, y la propuesta queda lista para que la apruebe la jefa del área. Hasta que no la aprueba, no sale un peso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUE DA -->
+<section class="services">
+  <div class="section-inner">
+    <div class="section-tag">Qué da</div>
+    <h2>Qué gana cada parte de la empresa</h2>
+    <div class="grid-3">
+      <div class="problem-card fade-up">
+        <h3>A cada puesto</h3>
+        <ul class="lista">
+          <li>Pide y se hace: mails, controles, informes y cargas en el sistema.</li>
+          <li>El día organizado: qué vence, qué le pidieron y qué espera su aprobación.</li>
+          <li>Aviso antes de un error, cuando algo se hace distinto del procedimiento.</li>
+          <li>Registrar hablando: partes, reclamos y visitas por audio.</li>
+        </ul>
+      </div>
+      <div class="problem-card fade-up">
+        <h3>Entre los puestos</h3>
+        <ul class="lista">
+          <li>Consultas y pedidos de una IA a otra, sin esperar a la persona.</li>
+          <li>Pases de trabajo con todo el contexto: el que sigue no tiene que preguntar nada.</li>
+          <li>Un buscador para toda la empresa: "¿dónde está el contrato con este proveedor?".</li>
+          <li>Si cambia un procedimiento, cada puesto afectado se entera.</li>
+        </ul>
+      </div>
+      <div class="problem-card fade-up">
+        <h3>A la dirección</h3>
+        <ul class="lista">
+          <li>Acceso a toda la información del sistema, cuando quiera.</li>
+          <li>Objetivos e indicadores con los datos reales, y aviso cuando se desvían.</li>
+          <li>Dónde se traba el trabajo y quién es el responsable.</li>
+          <li>Manual de procedimientos al día y registro de cada acción, listo para auditorías.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CUANDO ALGUIEN FALTA -->
+<section class="services arena">
+  <div class="section-inner">
+    <div class="section-tag">Continuidad</div>
+    <h2>Cuando alguien falta o cambia, el puesto sigue</h2>
+    <div class="grid-3">
+      <div class="problem-card fade-up">
+        <h3>Vacaciones y licencias</h3>
+        <p>El suplente atiende el puesto desde el mismo lugar, con la IA que ya sabe en qué quedó cada tema, y confirma lo que haga falta.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <h3>Alguien nuevo</h3>
+        <p>Recibe la IA del puesto con todo lo que aprendió, y la puede consultar desde el primer día.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <h3>Una salida</h3>
+        <p>La IA es de la empresa: queda en el puesto y la hereda quien llegue.</p>
+      </div>
+    </div>
+    <p class="nota">Si una persona ocupa dos puestos, tiene dos IAs detrás y una sola puerta: le pide a una sola y cada IA trabaja con los permisos de su puesto.</p>
+  </div>
+</section>
+
+<!-- SEGURIDAD -->
+<section class="problem">
+  <div class="section-inner">
+    <div class="section-tag">Seguridad y control</div>
+    <h2>Siempre decide una persona</h2>
+    <div class="problem-grid">
+      <div class="problem-card fade-up">
+        <h3>Nada sale sin aprobación</h3>
+        <p>La IA deja cada mail, carga o pago preparado con su vista previa. Lo ejecuta el sistema, y solo cuando lo aprueba alguien con permiso para hacerlo.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <h3>Cada IA ve lo que ve su puesto</h3>
+        <p>Los permisos se controlan por sistema, no se le piden a la IA. Ventas no ve los sueldos de cada persona; Tesorería recibe el total a pagar.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <h3>Todo queda registrado</h3>
+        <p>Cada acción queda con quién la pidió, quién la aprobó y cuándo. Lo que dice un mail o un adjunto se trata como dato, nunca como una orden.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <h3>Mide procesos, no califica personas</h3>
+        <p>La vista de la dirección muestra dónde se traba el trabajo, no cuánto rinde cada empleado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO SE EMPIEZA -->
+<section class="how blanco">
+  <div class="section-inner">
+    <h2>Cómo se empieza</h2>
+    <div class="how-steps">
+      <div class="how-step"><div class="step-num">01</div><div class="step-content"><h3>Diagnóstico de un área</h3><p>Sus procesos, las tareas que puede hacer la IA y dónde se traba el trabajo.</p></div></div>
+      <div class="how-step"><div class="step-num">02</div><div class="step-content"><h3>Piloto</h3><p>Entre 10 y 20 puestos de esa área, conectados al mail, la agenda y los documentos.</p></div></div>
+      <div class="how-step"><div class="step-num">03</div><div class="step-content"><h3>Ampliación</h3><p>El sistema de gestión, más áreas y la vista de toda la empresa para la dirección.</p></div></div>
+    </div>
+    <p class="nota">Se arma sobre lo que la empresa ya tiene: Microsoft 365 o Google Workspace, las licencias de IA que ya paga si las tiene, y el sistema de gestión que use, sea SAP, Odoo, Tango u otro.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="section-inner">
+    <h2>Preguntas frecuentes sobre Gemelos Inteligentes</h2>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q">¿Qué es un Gemelo Inteligente?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><p>Es la IA de un puesto de trabajo: conoce los procesos, los documentos y los sistemas de ese puesto, y hace el trabajo que la persona le pide. No es un asistente suelto: cada gemelo está conectado con los de los otros puestos y con los sistemas de la empresa, y lo que prepara pasa siempre por la aprobación de su responsable.</p></div></div>
+      <div class="faq-item"><button class="faq-q">¿Qué puede consultar la dirección?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><p>Todo lo que pasa por el sistema: cobranzas, pagos, caja, impuestos, sueldos, personal y dónde se traba el trabajo. Puede pedir el informe de la semana o hacer una pregunta suelta, y la respuesta sale de los datos del momento, sin pedirle un informe a nadie. Ve todo, pero no le llega todo: no recibe cada aviso ni cada aprobación de los puestos, consulta lo que le interesa.</p></div></div>
+      <div class="faq-item"><button class="faq-q">¿Reemplaza a los empleados?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><p>No. Cada gemelo tiene un responsable: la persona que ocupa el puesto. La IA prepara el trabajo y la persona decide. Lo que se saca de encima son las tareas repetitivas y la búsqueda de información, no las decisiones.</p></div></div>
+      <div class="faq-item"><button class="faq-q">¿En qué se diferencia de darle ChatGPT o Copilot a cada empleado?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><p>Un asistente de chat contesta lo que le pregunta quien lo usa. Un gemelo conoce los procesos del puesto, trabaja conectado con los otros puestos y con los sistemas de la empresa, avisa cuando algo se sale del procedimiento y deja registro de quién aprobó cada acción. Si la empresa ya paga licencias de IA, se aprovechan.</p></div></div>
+      <div class="faq-item"><button class="faq-q">¿Quién ve la información confidencial, como los sueldos?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><p>Cada IA ve solo lo que su puesto tiene permitido, igual que la persona. Por ejemplo, el sueldo de cada empleado lo ven Recursos Humanos y la dirección; Tesorería recibe el total a pagar. Los permisos se controlan por sistema, no se le piden a la IA. La vista de la dirección mide procesos, no califica personas.</p></div></div>
+      <div class="faq-item"><button class="faq-q">¿Hay que cambiar de sistema?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><p>No. Se arma sobre lo que la empresa ya usa: Microsoft 365 o Google Workspace para el mail, la agenda y los documentos, y el sistema de gestión que tenga, sea SAP, Odoo, Tango u otro. Cómo se conecta cada sistema se define en el diagnóstico.</p></div></div>
+      <div class="faq-item"><button class="faq-q">¿Cuánto cuesta?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><p>Depende de cuántos puestos entran y de qué sistemas hay que conectar, así que se cotiza después del diagnóstico del área por la que se empieza.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Mirá cómo trabaja un área entera con Gemelos Inteligentes</h2>
+  <p>Te mostramos la demo de Administración y Finanzas en una reunión corta, y vemos por qué área conviene empezar en tu empresa.</p>
+  <div class="cta-btns">
+    <a class="btn-dark" href="https://wa.me/5491125653768?text=Hola%2C%20quiero%20ver%20la%20demo%20de%20Gemelos%20Inteligentes" target="_blank" rel="noopener">Pedí la demo por WhatsApp</a>
+    <a class="btn-outline" href="https://cal.com/consultora-varka/diagnostico-gratuito" target="_blank" rel="noopener">Agendá una reunión</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <a class="footer-logo" href="/">
+        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" aria-hidden="true"><polygon points="14,2 24.5,8 24.5,20 14,26 3.5,20 3.5,8" stroke="#5DCAA5" stroke-width="1.75" fill="rgba(29,158,117,.08)" stroke-linejoin="round"/><circle cx="14" cy="14" r="3" fill="#1D9E75"/></svg>
+        Varka
+      </a>
+      <p class="footer-tagline">Consultora de IA para empresas que quieren crecer sin complicarse.</p>
+      <a class="footer-email" href="https://mail.google.com/mail/?view=cm&to=consultas@varka.tech&su=Consulta desde varka.tech" target="_blank" rel="noopener">consultas@varka.tech</a><br>
+      <a class="footer-email" href="https://wa.me/5491125653768" target="_blank" rel="noopener">+54 9 11 2565-3768</a>
+    </div>
+    <div class="footer-col">
+      <h4>Soluciones</h4>
+      <ul>
+        <li><a href="/consultora-ia">Consultora de IA</a></li>
+        <li><a href="/automatizaciones-ia">Automatizaciones con IA</a></li>
+        <li><a href="/agentes-de-ia">Agentes de IA</a></li>
+        <li><a href="/gemelos-inteligentes">Gemelos Inteligentes</a></li>
+        <li><a href="/ciberseguridad-ia">Ciberseguridad</a></li>
+        <li><a href="/posicionamiento-ia">Posicionamiento en IA (GEO)</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="/#proceso">Cómo trabajamos</a></li>
+        <li><a href="/glosario">Glosario</a></li>
+        <li><a href="/#faq">Preguntas frecuentes</a></li>
+        <li><a href="https://cal.com/consultora-varka/diagnostico-gratuito" target="_blank" rel="noopener">Agendar</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Seguinos</h4>
+      <ul>
+        <li><a href="https://www.linkedin.com/company/varka-consultora/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/consultoravarka/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://wa.me/5491125653768" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Varka. Todos los derechos reservados.</p>
+    <div class="footer-links"><a href="/">Inicio</a></div>
+  </div>
+</footer>
+
+<script>
+  // Nav scrolled
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
+  // Hamburger
+  const hb = document.getElementById('hamburger'), mn = document.getElementById('mobile-nav');
+  hb.addEventListener('click', () => { hb.classList.toggle('open'); mn.classList.toggle('open'); });
+  mn.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { hb.classList.remove('open'); mn.classList.remove('open'); }));
+  // Aparición de las tarjetas al hacer scroll
+  const obsFade = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obsFade.unobserve(e.target); } });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.fade-up').forEach(el => obsFade.observe(el));
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => q.addEventListener('click', () => { q.parentElement.classList.toggle('open'); }));
+</script>
+<script src="/widget.js" defer></script>
+</body>
+</html>

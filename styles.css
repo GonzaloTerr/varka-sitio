@@ -226,14 +226,15 @@ footer { background: var(--verde-noche); padding: 4rem 3rem 2rem; border-top: 1p
   .hero-inner { grid-template-columns: 1fr; }
   .footer-top { grid-template-columns: 1fr 1fr; }
 }
-/* Con 8 items en el menu el nav se aprieta contra el logo y el boton
-   ya desde ~1300px. Se achica la separacion antes de pasar a hamburguesa. */
-@media (max-width: 1400px) and (min-width: 1151px) {
+/* Con 9 items en el menu (13/11: se sumo Gemelos Inteligentes) el nav se aprieta
+   contra el logo y el boton ya desde ~1300px. Se achica la separacion y, por debajo
+   de 1240px, pasa a hamburguesa: a 1160px los items se partian en dos renglones. */
+@media (max-width: 1400px) and (min-width: 1241px) {
   .nav-links { gap: 1.5rem; }
-  .nav-links a { font-size: .82rem; }
+  .nav-links a { font-size: .82rem; white-space: nowrap; }
   nav { padding: 1rem 1.5rem; }
 }
-@media (max-width: 1150px) {
+@media (max-width: 1240px) {
   nav { padding: 1rem 1.5rem; }
   .nav-links, .nav-cta { display: none; }
   .hamburger { display: flex; }
